@@ -2,6 +2,12 @@ import { z } from "zod";
 
 import { TOPICS } from "@/lib/topics";
 
+/** Devanagari shows up when a small model slips into native script. */
+const latinOnly = (label: string) =>
+  z.string().trim().min(1).max(300).refine((text) => !/[ऀ-ॿ]/.test(text), {
+    message: `${label} must be romanized, not Devanagari.`,
+  });
+
 export const topicSchema = z.enum(TOPICS);
 
 /** Body of POST /api/sentence */
@@ -11,7 +17,7 @@ export const sentenceRequestSchema = z.object({
 
 /** Response of POST /api/sentence */
 export const sentenceResponseSchema = z.object({
-  sentence: z.string().trim().min(1).max(300),
+  sentence: latinOnly("sentence"),
 });
 
 /** Body of POST /api/check */
@@ -28,7 +34,7 @@ export const feedbackSchema = z.object({
   correctPhrase: z.string().trim().min(1).max(300),
   pattern: z.string().trim().min(1).max(300),
   variations: z.tuple([z.string().trim().min(1).max(300), z.string().trim().min(1).max(300)]),
-  note: z.string().trim().min(1).max(300),
+  note: latinOnly("note"),
 });
 
 export type Feedback = z.infer<typeof feedbackSchema>;

@@ -1,4 +1,4 @@
-import { askForJson, errorResponse } from "@/lib/gemini";
+import { askForJson, errorResponse } from "@/lib/groq";
 import { RETRY_SUFFIX, SENTENCE_SYSTEM_PROMPT, sentenceUserPrompt } from "@/lib/prompts";
 import { sentenceRequestSchema, sentenceResponseSchema } from "@/lib/schema";
 import { TOPIC_BRIEFS } from "@/lib/topics";
