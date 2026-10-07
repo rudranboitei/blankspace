@@ -24,3 +24,130 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --radius: 0.5rem;
+
+  --background: #F1F3F6;
+  --foreground: #152238;
+  --card: #FAFBFC;
+  --card-foreground: #152238;
+  --popover: #FAFBFC;
+  --popover-foreground: #152238;
+  --primary: #152238;
+  --primary-foreground: #F1F3F6;
+  --secondary: #E4E8EF;
+  --secondary-foreground: #152238;
+  --muted: #E4E8EF;
+  --muted-foreground: #566176;
+  --accent: #E4E8EF;
+  --accent-foreground: #152238;
+  --destructive: #B3263E;
+  --border: #D5DAE3;
+  --input: #C3CAD6;
+  --ring: #152238;
+
+  --slot: #E3A008;
+  --correct: #1E7A57;
+  --fix: #B3263E;
+}
+
+.dark {
+  --background: #0E1522;
+  --foreground: #E6EAF1;
+  --card: #151F33;
+  --card-foreground: #E6EAF1;
+  --popover: #151F33;
+  --popover-foreground: #E6EAF1;
+  --primary: #E6EAF1;
+  --primary-foreground: #0E1522;
+  --secondary: #1C2740;
+  --secondary-foreground: #E6EAF1;
+  --muted: #1C2740;
+  --muted-foreground: #94A0B5;
+  --accent: #1C2740;
+  --accent-foreground: #E6EAF1;
+  --destructive: #F27A8C;
+  --border: #26334D;
+  --input: #32415F;
+  --ring: #E6EAF1;
+
+  --slot: #F2B632;
+  --correct: #4CBF93;
+  --fix: #F27A8C;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-slot: var(--slot);
+  --color-correct: var(--correct);
+  --color-fix: var(--fix);
+
+  --font-sans: var(--font-hind), system-ui, sans-serif;
+  --font-serif: var(--font-literata), Georgia, serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Slot: the swappable part of a pattern. Marigold is used nowhere else. */
+.slot {
+  background-color: color-mix(in srgb, var(--slot) 20%, transparent);
+  background-image: linear-gradient(var(--slot), var(--slot));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.16em;
+  border-radius: 4px;
+  padding: 0 0.2em;
+}
+
+/* The one animated moment in the app: underlines draw in when a result appears. */
+.slot-reveal .slot {
+  animation: slot-draw 450ms ease-out both;
+  animation-delay: calc(var(--i, 0) * 120ms);
+}
+
+@keyframes slot-draw {
+  from {
+    background-size: 0% 0.16em;
+  }
+
+  to {
+    background-size: 100% 0.16em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slot-reveal .slot {
+    animation: none;
+  }
+}

@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pattern Practice
 
-## Getting Started
+An English practice app for Hindi speakers. You read a short Hinglish sentence, write your
+English version, and get back the phrase a native speaker would actually say, the reusable
+pattern behind it, and two more sentences that use the same pattern.
 
-First, run the development server:
+Next.js (App Router, TypeScript), Tailwind CSS, shadcn/ui, Google Gemini.
+
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+cp .env.example .env.local   # add your Gemini API key
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Required | Notes |
+|---|---|---|
+| `GEMINI_API_KEY` | yes | From [AI Studio](https://aistudio.google.com/apikey). Server only, never sent to the browser. |
+| `GEMINI_MODEL` | no | Defaults to `gemini-3.5-flash`. The route retries with `gemini-3.5-flash` when the chosen model is out of capacity. |
 
-## Learn More
+## How it works
 
-To learn more about Next.js, take a look at the following resources:
+- `GET /` is the practice screen. A topic tab picks the situation, the API writes one Hinglish
+  sentence for it, you answer, and the result block shows your answer, the correct phrase with
+  its swappable slots, the pattern, two variations, and one line on what was off.
+- The mic button is optional input through the Web Speech API. Browsers without it keep typing.
+- "Save pattern" writes to `localStorage`, so `/library` is a plain list with search and a
+  review mode that hides the English until you ask for it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Both routes are `POST` and both validate their input with Zod before calling Gemini.
 
-## Deploy on Vercel
+```bash
+curl -X POST localhost:3000/api/sentence -H 'content-type: application/json' -d '{"topic":"tech-work"}'
+# {"sentence":"mujhe is task me thoda help chahiye, kya tumhare paas time hai"}
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+curl -X POST localhost:3000/api/check -H 'content-type: application/json' \
+  -d '{"topic":"tech-work","hindi":"...","userAnswer":"..."}'
+# {"correctPhrase":"I'm {stuck on this task}, do you have {a few minutes}?","pattern":"...",
+#  "variations":["...","..."],"note":"..."}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The model is asked for JSON only, replies are parsed with `JSON.parse` and then validated with
+Zod (`src/lib/schema.ts`), and an unusable reply is retried once with a stricter instruction.
+Rate limits, overload, timeouts, blocked content and a missing key each come back as a plain
+sentence the UI shows in a toast. `src/lib/gemini.ts` owns all of that.
+
+## Project layout
+
+```
+src/app/api/check       POST: score an answer, return the pattern
+src/app/api/sentence    POST: write one Hinglish sentence for a topic
+src/app/library         saved patterns, search, review mode
+src/components          screens and shadcn/ui primitives
+src/hooks               localStorage library, Web Speech input
+src/lib                 Gemini client, prompts, Zod schemas, topics
+```
+
+`DESIGN.md` is the source of truth for anything visual. Read it before changing UI.
+
+No auth, no database. Patterns live in `localStorage` for now.
+
+# blankspace
