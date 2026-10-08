@@ -8,6 +8,7 @@ import {
 } from "@/lib/prompts";
 import { explainReplySchema, explainRequestSchema, verifyReplySchema } from "@/lib/schema";
 import { normalizeAnswer } from "@/lib/normalize";
+import { consumeCoachQuota } from "@/lib/rate-limit";
 import { createAdminClient, answerHash } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { TOPIC_BRIEFS, type Topic } from "@/lib/topics";
@@ -23,15 +24,21 @@ import { TOPIC_BRIEFS, type Topic } from "@/lib/topics";
  * the server looks the sentence up and derives the key, so a caller cannot coach a different
  * sentence than the one they are looking at or read another learner's cache entry.
  *
- * Signing in is not required, and nothing here reads anything belonging to the caller.
+ * Signing in is not required, and nothing here reads anything belonging to the caller. What
+ * keeps that from being a way to spend freely is the cache above and the quota below.
  */
 export async function POST(request: Request) {
   // Proxy skips /api so this answers with JSON instead of a redirect to the login page.
   //
-  // Guests are allowed: the coach works signed out, it is rate limited by address in Step 6,
-  // and the answer is cached on the sentence rather than on the caller, so a guest costs the
-  // same as anyone else and often less, because the cache is shared.
+  // Guests are allowed: the coach works signed out, the answer is cached on the sentence
+  // rather than on the caller, so a guest costs the same as anyone else and often less,
+  // because the cache is shared. They are limited per address instead of per account.
   const userClient = await createClient();
+
+  // Read the JWT rather than asking the auth server who this is. `getUser` would spend a
+  // round trip on every request to learn something the cookie already says.
+  const { data: claims } = await userClient.auth.getClaims();
+  const userId = claims?.claims.sub ?? null;
 
   const body = await request.json().catch(() => null);
   const parsed = explainRequestSchema.safeParse(body);
@@ -87,6 +94,19 @@ export async function POST(request: Request) {
 
     if (cacheError) throw new Error(cacheError.message);
     if (cached) return Response.json({ kind: mode, cached: true, ...cached.content });
+
+    // Everything above was free. This is the first point where a call would cost anything,
+    // so this is the only place worth spending quota, and a cache hit above is never charged.
+    const quota = await consumeCoachQuota({ admin, userId, request });
+    if (!quota.allowed) {
+      // A distinct code from the provider's own 429, which is also `rate_limited`. Both are a
+      // 429 to the caller, but only one of them is this learner's allowance, and only one of
+      // them will be back after a minute rather than after Groq's backoff runs out.
+      return Response.json(
+        { error: quota.message, code: "out_of_allowance" },
+        { status: 429, headers: { "Retry-After": String(quota.retryAfterSeconds) } },
+      );
+    }
 
     const topicBrief = TOPIC_BRIEFS[sentence.topic as Topic] ?? sentence.topic;
 

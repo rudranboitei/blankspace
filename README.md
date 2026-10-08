@@ -61,6 +61,35 @@ rather than being dropped.
   right, check it** spends one call re-judging a wording the bank does not list. Both are
   cached on `sentenceId` plus the normalised answer, so the same answer never costs two calls
   and a rate limit can only bite once per distinct question.
+
+### Spending
+
+Because signing in is optional and the coach works signed out, nothing about a request says
+who is behind it. Two things bound the cost instead.
+
+The cache is the real one. It is keyed by sentence and answer and shared by everyone, so the
+second person to ask any particular question pays nothing, and repeating yourself is always
+free. Quota is spent only on a cache miss, never on a hit.
+
+Past that, `consume_coach_quota` counts calls in Postgres, per account when there is one and
+per address when there is not: 10 a minute and 100 a day signed in, 5 and 25 signed out. Two
+windows, because they answer different questions. The minute number smooths a burst; the daily
+number is what actually caps cost.
+
+The counting is in the database rather than the app on purpose. This route runs serverless,
+so a counter in memory would reset every invocation, and a read-then-write in the app would let
+two simultaneous requests both see the same count and both get through. The increment carries
+its own guard instead, so the statement returns nothing once a window is full, which is how a
+refused call is told apart from an allowed one without a second read.
+
+Being straight about the guest limit: it is keyed on `x-forwarded-for`, which is set by the
+platform in front of the app but is only trustworthy where that platform overwrites it. Where
+it merely appends, a caller can send a different address each time and never hit a limit. It
+is a fairness limit, not a security boundary. Making the coach require an account is the only
+real fix, at the cost of the thing Step 5 added.
+
+A refusal says `out_of_allowance` and carries `Retry-After`. Groq's own throttling is also a
+429, and is reported as `rate_limited`, so the two are never confused.
 - The mic button is optional input through the Web Speech API. Browsers without it keep typing.
   The Listen button reads a phrase out loud with `speechSynthesis`, also free, so the loop is
   speak it, hear it, say it. Opening the mic stops anything still talking, otherwise the
@@ -168,6 +197,10 @@ five a minute before Groq starts refusing, and the cache means most sessions nev
 
 Patterns saved before spaced review existed have no `box` or `dueAt` in `localStorage`. They are
 filled in on read rather than discarded, so an old library starts at box 1 and is due right away.
+- A call that fails still spends its quota, because the limit is taken before the model is
+  called, which is the only way two simultaneous calls cannot both slip past. When Groq is
+  throttling rather than the caller, that means a learner's daily allowance can shrink. The fix
+  is a `refund_coach_quota` to call on the way out of the catch, at the cost of a second write.
 Records saved before the bank existed are dropped on read, since their wording no longer matches
 any bank item.
 
@@ -182,7 +215,7 @@ src/components          screens and shadcn/ui primitives
 src/data/bank           the committed practice bank, one file per topic
 src/hooks               the pattern store (database or localStorage), Web Speech input and output
 scripts                 bank:generate and bank:validate, run once and then to top up
-src/lib                 normalising, matching, slots, Groq client, prompts, schemas
+src/lib                 normalising, matching, slots, Groq client, prompts, schemas, rate limiting
 src/lib/supabase        browser client, server client, sign-out action
 src/proxy.ts            refreshes the session, lets guests through to / and /library
 ```

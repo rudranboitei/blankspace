@@ -97,6 +97,13 @@ Two buttons below the diff spend money, and only two: "Explain" and "My answer i
 it". The second appears only while the answer is not yet accepted, and disappears once the coach
 has ruled on it.
 
+Either may be refused for the day once the allowance is spent, and the message has to be useful
+rather than apologetic: "That's today's allowance used up. Saved patterns and reviews keep
+working, and the coach is back tomorrow." It names what still works, because the learner did
+nothing wrong and the rest of the app did not break. A per-minute refusal is a different
+sentence, since waiting a minute is the actual fix: "Too many questions just now. Give it a
+minute and try again."
+
 ## Spaced review
 
 Review is a Leitner ladder in six boxes. With an account the ladder lives in `saved_patterns`
