@@ -1,0 +1,886 @@
+[
+  {
+    "id": "tw-001",
+    "topic": "tech-work",
+    "hindi": "Mujhe kal ka deadline miss ho gaya hai, kya aap help karenge?",
+    "accepted": [
+      "I missed the deadline for tomorrow, could you help me?",
+      "I missed the deadline for tomorrow. Can you help me out?",
+      "I missed tomorrow's deadline. Could you lend a hand?",
+      "I missed the deadline for tomorrow. Could you help?",
+      "Could you help me since I missed the deadline tomorrow?",
+      "Can you help me because I missed tomorrow's deadline?",
+      "Could you help me, as I missed the deadline for tomorrow?"
+    ],
+    "correctPhrase": "I missed the deadline for tomorrow. Could you help?",
+    "pattern": "{Subject} {verb} {time}, {verb} {object} ?",
+    "variations": [
+      "I missed the deadline for next week, can you help me?",
+      "I missed the deadline for tonight, can you help me?"
+    ]
+  },
+  {
+    "id": "tw-002",
+    "topic": "tech-work",
+    "hindi": "Code review ke baad mujhe thoda feedback milega?",
+    "accepted": [
+      "Will I get some feedback after the code review?",
+      "Can I get some feedback after the code review?",
+      "Will I receive feedback after the code review?",
+      "Will I have feedback after the code review?",
+      "Can I get feedback after the code review?",
+      "Will I have any feedback after the code review?",
+      "Will I receive any feedback after the code review?"
+    ],
+    "correctPhrase": "Will {I have feedback} after the {code review}?",
+    "pattern": "Will {subject} {verb} {object} after the {noun}?",
+    "variations": [
+      "Will I get any feedback after the review?",
+      "Will I receive feedback after the code review?"
+    ]
+  },
+  {
+    "id": "tw-003",
+    "topic": "tech-work",
+    "hindi": "Main remote kaam kar raha hu, kya team se meeting hogi?",
+    "accepted": [
+      "I'm working remotely, will there be a meeting with the team?",
+      "I'm working remotely, is there a meeting with the team?",
+      "I'm remote, will there be a team meeting?",
+      "I'm remote, is there a team meeting?",
+      "I'm working from home, will the team have a meeting?",
+      "I'm working from home, is there a team meeting?",
+      "I'm remote, will the team have a meeting?"
+    ],
+    "correctPhrase": "{I'm working remotely, is there a meeting} with the {team}?",
+    "pattern": "{Subject} {verb} {adverb}, {verb} {object} with the {noun}?",
+    "variations": [
+      "I'm working remotely, will there be a team meeting?",
+      "I'm remote, will the team have a meeting?"
+    ]
+  },
+  {
+    "id": "tw-004",
+    "topic": "tech-work",
+    "hindi": "Kya main ek task se dusre task pe switch kar sakta hu?",
+    "accepted": [
+      "Can I switch from one task to another?",
+      "Can I move from one task to another?",
+      "Can I shift from one task to another?",
+      "Can I switch tasks?",
+      "Can I move tasks?",
+      "Can I shift tasks?"
+    ],
+    "correctPhrase": "Can {I move} from one {task} to another?",
+    "pattern": "Can {subject} {verb} from one {noun} to another?",
+    "variations": [
+      "Can I switch tasks?",
+      "Can I move from one task to another?"
+    ]
+  },
+  {
+    "id": "tw-005",
+    "topic": "tech-work",
+    "hindi": "Deploy hone ke baad system check karna hoga?",
+    "accepted": [
+      "Do I need to check the system after the deploy?",
+      "Will I need to check the system after deployment?",
+      "Do I need to test the system after the deploy?",
+      "Will I need to test the system after deployment?",
+      "Do I have to check the system after deployment?",
+      "Will I have to check the system after deployment?",
+      "Do I need to test the system after deployment?",
+      "Will I have to test the system after deployment?"
+    ],
+    "correctPhrase": "Do {I need to test} the {system} after {deployment}?",
+    "pattern": "Do {subject} {verb} the {noun} after the {verb}?",
+    "variations": [
+      "Will I need to check the system after deployment?",
+      "Do I have to check the system after deployment?"
+    ]
+  },
+  {
+    "id": "tw-006",
+    "topic": "tech-work",
+    "hindi": "Kal ke standup me tum kaunse feature pe kaam kar rahe the?",
+    "accepted": [
+      "What feature were you working on at tomorrow's standup?",
+      "At tomorrow's standup, which feature were you working on?",
+      "Which feature were you working on in tomorrow's standup?",
+      "What were you working on in tomorrow's standup?",
+      "What feature did you work on in tomorrow's standup?",
+      "What were you working on at the standup tomorrow?",
+      "In tomorrow's standup, what were you working on?",
+      "What feature did you work on at tomorrow's standup?"
+    ],
+    "correctPhrase": "What were you working on in tomorrow's standup?",
+    "pattern": "{what} {were you working on} {at} {tomorrow's standup}?",
+    "variations": [
+      "Which task were you working on at tomorrow's standup?",
+      "What were you working on at tomorrow's standup?"
+    ]
+  },
+  {
+    "id": "tw-007",
+    "topic": "tech-work",
+    "hindi": "Kya tum code review kiya hai ya usme kuch changes chahiye?",
+    "accepted": [
+      "Did you review the code or do you need any changes?",
+      "Did you do the code review or do you need any changes?",
+      "Have you reviewed the code or do you need changes?",
+      "Did you review the code or need any changes?",
+      "Did you review the code or is it okay?",
+      "Did you review the code or are there any changes?",
+      "Did you code review or do you need any changes?"
+    ],
+    "correctPhrase": "Did you review the code or is it okay?",
+    "pattern": "{did you} {review} {the code} {or} {do you need} {any changes}?",
+    "variations": [
+      "Have you reviewed the code or need any changes?",
+      "Did you review the code or do you need changes?"
+    ]
+  },
+  {
+    "id": "tw-008",
+    "topic": "tech-work",
+    "hindi": "Mujhe deadline se pehle deploy karna hoga, kya aap help kar sakte hain?",
+    "accepted": [
+      "I need to deploy before the deadline, can you help?",
+      "I have to deploy before the deadline, can you help?",
+      "Can you help me deploy before the deadline?",
+      "I need to deploy before the deadline, can you assist?",
+      "I have to deploy before the deadline, can you assist?",
+      "Can you assist with the deployment before the deadline?",
+      "I need to deploy before the deadline, can you help me?",
+      "I have to deploy before the deadline, can you help me?"
+    ],
+    "correctPhrase": "Can you help me deploy before the deadline?",
+    "pattern": "{I need} {to deploy} {before} {the deadline}, {can you help}?",
+    "variations": [
+      "I need to deploy before the deadline, can you assist?",
+      "I have to deploy before the deadline, can you help?"
+    ]
+  },
+  {
+    "id": "tw-009",
+    "topic": "tech-work",
+    "hindi": "Remote work ke dauran main kaunse tasks par focus kar raha hoon?",
+    "accepted": [
+      "What tasks am I focusing on during remote work?",
+      "During remote work, what tasks am I focusing on?",
+      "What tasks am I working on while remote?",
+      "Which tasks am I focusing on while remote work?",
+      "During remote work, which tasks am I focusing on?",
+      "What tasks am I focusing on while working remotely?",
+      "During remote work, what tasks am I working on?",
+      "Which tasks am I working on during remote work?"
+    ],
+    "correctPhrase": "What tasks am I working on while remote?",
+    "pattern": "{what} {tasks} {am I} {focusing on} {during} {remote work}?",
+    "variations": [
+      "Which tasks am I focusing on during remote work?",
+      "What tasks am I working on while remote?"
+    ]
+  },
+  {
+    "id": "tw-010",
+    "topic": "tech-work",
+    "hindi": "Main meeting ke beech task badal raha hoon, kya aapko koi issue hai?",
+    "accepted": [
+      "I'm switching tasks in the middle of a meeting, is that okay?",
+      "I'm switching tasks during the meeting, is that a problem?",
+      "I am changing tasks in the middle of a meeting, is that fine?",
+      "I'm switching tasks while in a meeting, do you have any issue?",
+      "I’m switching tasks during a meeting, is that okay?",
+      "I’m switching tasks in the middle of a meeting, is that alright?",
+      "I'm changing tasks during the meeting, do you mind?",
+      "I am switching tasks while meeting, is that a problem?"
+    ],
+    "correctPhrase": "I’m switching tasks during a meeting, is that okay?",
+    "pattern": "{I’m} {switching tasks} {in the middle of} {a meeting}, {is that okay}?",
+    "variations": [
+      "I’m switching tasks while in a meeting, is that fine?",
+      "I'm switching tasks in the middle of a meeting, is that alright?"
+    ]
+  },
+  {
+    "id": "tw-011",
+    "topic": "tech-work",
+    "hindi": "Mujhe deadline pe project submit karna hai, kaise help milegi?",
+    "accepted": [
+      "I need to submit the project by the deadline, how can I get help?",
+      "I have to submit the project before the deadline, how can I get help?",
+      "I must submit the project by the deadline, how do I get help?",
+      "I need to submit the project by the deadline, how can I get assistance?",
+      "I have to submit the project by the deadline, how can I get assistance?"
+    ],
+    "correctPhrase": "I must submit the project by the deadline, how do I get help?",
+    "pattern": "{I need to} {verb phrase} {object}, {question phrase}",
+    "variations": [
+      "I need to submit the project before the deadline, how can I get help?",
+      "I have to submit the project by the deadline, how can I get help?"
+    ]
+  },
+  {
+    "id": "tw-012",
+    "topic": "tech-work",
+    "hindi": "Standup meeting mein aaj kya discuss karna hai?",
+    "accepted": [
+      "What should we discuss in today's standup?",
+      "What do we need to discuss in today's standup?",
+      "What topics do we cover in today's standup?",
+      "What should be discussed in today's standup?",
+      "What do we discuss in today's standup?"
+    ],
+    "correctPhrase": "What do we discuss in today's standup?",
+    "pattern": "{What} {should we} {verb} {object} in today's standup?",
+    "variations": [
+      "What do we discuss in today's standup?",
+      "What do we cover in today's standup?"
+    ]
+  },
+  {
+    "id": "tw-013",
+    "topic": "tech-work",
+    "hindi": "Code review ke liye koi review kar raha hai?",
+    "accepted": [
+      "Is anyone available to review my code?",
+      "Is there anyone who can review my code?",
+      "Can anyone review my code?",
+      "Is anyone up for reviewing my code?",
+      "Is anyone around to review my code?"
+    ],
+    "correctPhrase": "{Is anyone around} to {review} my code?",
+    "pattern": "{Is anyone} {verb} to {verb phrase} my code?",
+    "variations": [
+      "Is there anyone who can review my code?",
+      "Can anyone review my code?"
+    ]
+  },
+  {
+    "id": "tw-014",
+    "topic": "tech-work",
+    "hindi": "Remote work ke liye koi setup tips?",
+    "accepted": [
+      "Do you have any setup tips for remote work?",
+      "Can you share some setup tips for working remotely?",
+      "Do you have any tips for setting up remote work?",
+      "Any setup tips for remote work?",
+      "Got any tips for setting up remote work?"
+    ],
+    "correctPhrase": "{Any setup tips} for {remote work}?",
+    "pattern": "{Do you} {have any} {noun phrase} for {context}",
+    "variations": [
+      "Can you share any tips for setting up remote work?",
+      "Do you have any tips for working remotely?"
+    ]
+  },
+  {
+    "id": "tw-015",
+    "topic": "tech-work",
+    "hindi": "Task switch karna hai, next task kaun sa?",
+    "accepted": [
+      "Which task should I switch to next?",
+      "What task should I move to next?",
+      "Which task do I need to switch to next?",
+      "What is the next task I should switch to?",
+      "Which task should I switch to now?"
+    ],
+    "correctPhrase": "{What task should I move} to {next}?",
+    "pattern": "{Which} {task} {should I} {verb} to {noun}?",
+    "variations": [
+      "What task should I switch to next?",
+      "Which task should I move to next?"
+    ]
+  },
+  {
+    "id": "tw-016",
+    "topic": "tech-work",
+    "hindi": "Mujhe aaj deadline se pehle code review karna hai",
+    "accepted": [
+      "I need to review the code before the deadline today",
+      "I have to finish reviewing the code before the deadline today",
+      "I must review the code today before the deadline"
+    ],
+    "correctPhrase": "I need to review the {code} before the {deadline} today",
+    "pattern": "I need to review the {noun} before the {time} today",
+    "variations": [
+      "I must finish reviewing the code before the deadline today",
+      "I have to review the code before the deadline today"
+    ]
+  },
+  {
+    "id": "tw-017",
+    "topic": "tech-work",
+    "hindi": "Main aaj remote kaam kar raha hoon, kab tak kaam poora karna hai?",
+    "accepted": [
+      "I’m working remotely today; when do I need to finish the work?",
+      "I’m working from home today; by when do I need to finish the task?",
+      "I’m working remotely today; by what time do I have to complete it?",
+      "I’m working from home today; when should the work be done?",
+      "I’m remote today; by when should I finish this?",
+      "I’m working from home today; when is the deadline for this?",
+      "I’m remote today; when should I have it done?"
+    ],
+    "correctPhrase": "I’m remote today; when should I have it done?",
+    "pattern": "I’m {verb} {adverb} today; when do I need to finish the {noun}?",
+    "variations": [
+      "I’m working from home today; when do I need to finish the task?",
+      "I’m remote today; when should I have it done?"
+    ]
+  },
+  {
+    "id": "tw-018",
+    "topic": "tech-work",
+    "hindi": "Kal ka deadline kaun miss karega?",
+    "accepted": [
+      "Who will miss tomorrow's deadline?",
+      "Which person will miss tomorrow's deadline?",
+      "Who’s going to miss tomorrow’s deadline?",
+      "Will anyone miss the deadline tomorrow?",
+      "Who might miss tomorrow’s deadline?"
+    ],
+    "correctPhrase": "Who will miss tomorrow's deadline?",
+    "pattern": "Who’s going to miss {time}’s {noun}?",
+    "variations": [
+      "Who’s going to miss tomorrow’s presentation?"
+    ]
+  },
+  {
+    "id": "tw-019",
+    "topic": "tech-work",
+    "hindi": "Team ke saath daily standup shuru karna hai",
+    "accepted": [
+      "We need to start the daily standup with the team.",
+      "The team has to start the daily standup now.",
+      "We should kick off the daily standup with the team.",
+      "Let's begin the daily standup with the team today.",
+      "The daily standup should start with the team.",
+      "We should kick off the daily standup with the team now."
+    ],
+    "correctPhrase": "{We} should kick off the {daily standup} with {the team}.",
+    "pattern": "{subject} should kick off the {time} {noun} with {object}.",
+    "variations": [
+      "We should kick off the daily standup with the team today."
+    ]
+  },
+  {
+    "id": "tw-020",
+    "topic": "tech-work",
+    "hindi": "Agle hafte deploy ka plan banaya jaega",
+    "accepted": [
+      "We will plan the deploy next week.",
+      "The deploy plan will be made next week.",
+      "Next week we will set up the deploy plan.",
+      "The deploy schedule will be arranged next week.",
+      "We'll prepare the deploy plan next week."
+    ],
+    "correctPhrase": "{Next week} we will {set up the deploy} plan.",
+    "pattern": "We will plan the {noun} {time}.",
+    "variations": [
+      "We will plan the deploy schedule next week."
+    ]
+  },
+  {
+    "id": "tw-021",
+    "topic": "tech-work",
+    "hindi": "Remote work ke liye office ka address chahiye",
+    "accepted": [
+      "I need the office address for remote work.",
+      "What’s the office address for remote work?",
+      "Could you give me the office address for remote work?",
+      "Please share the office address for remote work.",
+      "I’d like the office address for remote work."
+    ],
+    "correctPhrase": "What’s the office address for remote work?",
+    "pattern": "What’s the {noun} for {activity}?",
+    "variations": [
+      "What’s the office address for telecommuting?"
+    ]
+  },
+  {
+    "id": "tw-022",
+    "topic": "tech-work",
+    "hindi": "Maine code review ke liye tumse help mangi, par koi reply nahi aaya",
+    "accepted": [
+      "I asked you for help with the code review, but I didn't get a reply",
+      "I asked you for help with the code review, but you didn't respond",
+      "I requested your help on the code review, but you haven't responded yet",
+      "I asked you for help with the code review, and I still haven't heard back",
+      "I asked you for help with the code review, but I haven't received a response"
+    ],
+    "correctPhrase": "I asked you for help with the {code review}, but {you didn't respond}",
+    "pattern": "I asked you for help with the {task}, but I haven't received a {response}",
+    "variations": [
+      "I asked you for assistance with the code review, but I haven't received a response",
+      "I asked you for help on the code review, but I still haven't heard back"
+    ]
+  },
+  {
+    "id": "tw-023",
+    "topic": "tech-work",
+    "hindi": "Humari standup meeting mein aaj sabne kaam ke status bataya",
+    "accepted": [
+      "Everyone shared their work status during today's standup",
+      "During today's standup everyone talked about their work status",
+      "Everyone gave an update on their work status during the standup",
+      "During the standup, everyone reported their work status",
+      "Everyone presented their work status in today's standup"
+    ],
+    "correctPhrase": "{During the standup}, everyone {reported} their {work status}",
+    "pattern": "Everyone {shared/gave/presented} their {work status} during today's {meeting}",
+    "variations": [
+      "Everyone reported their work status during today's standup",
+      "Everyone gave an update on their work status during the standup"
+    ]
+  },
+  {
+    "id": "tw-024",
+    "topic": "tech-work",
+    "hindi": "Mujhe deadline ke baare mein aapka feedback chahiye",
+    "accepted": [
+      "I need your feedback on the deadline",
+      "Could you give me feedback about the deadline",
+      "Can you tell me what you think of the deadline",
+      "I need your input on the deadline",
+      "Please let me know your thoughts about the deadline"
+    ],
+    "correctPhrase": "I need your {input} on the {deadline}",
+    "pattern": "I need your {feedback/input/thoughts} on the {deadline/issue/timeframe}",
+    "variations": [
+      "I need your input on the deadline",
+      "I need your thoughts on the deadline"
+    ]
+  },
+  {
+    "id": "tw-025",
+    "topic": "tech-work",
+    "hindi": "Maine project ko deploy kar diya, ab sabko inform karo",
+    "accepted": [
+      "I have deployed the project, now inform everyone",
+      "The project is deployed, please let everyone know",
+      "I've deployed the project, so please inform everyone",
+      "The project is up, let everyone know",
+      "The project is now live, inform everyone"
+    ],
+    "correctPhrase": "I have {deployed} the {project}, now {inform} everyone",
+    "pattern": "I have {deployed/rolled out} the {project/system}, now {inform/notify} everyone",
+    "variations": [
+      "I have rolled out the project, now notify everyone",
+      "The project is deployed, please inform everyone"
+    ]
+  },
+  {
+    "id": "tw-026",
+    "topic": "tech-work",
+    "hindi": "Remote work ke liye mujhe ek aur din ki chutti chahiye",
+    "accepted": [
+      "I need another day off for remote work",
+      "Could I have an extra day off for remote work",
+      "I would like an additional day off for remote work",
+      "I need one more day off to work remotely",
+      "May I take an extra day off for remote work"
+    ],
+    "correctPhrase": "I need {another day} off for {remote work}",
+    "pattern": "I need {another/additional/extra} {day/days} off for {remote work/home work}",
+    "variations": [
+      "I need an extra day off for remote work",
+      "I would like one more day off to work remotely"
+    ]
+  },
+  {
+    "id": "tw-027",
+    "topic": "tech-work",
+    "hindi": "Mujhe kal ki deadline ke liye kuch help chahiye",
+    "accepted": [
+      "I need some help with the deadline tomorrow",
+      "Could you help me with tomorrow’s deadline?",
+      "I could use some assistance for the deadline tomorrow"
+    ],
+    "correctPhrase": "I need some help with the deadline tomorrow",
+    "pattern": "{I need some help with the {deadline} {deadline_time}}",
+    "variations": [
+      "I could use some help with the deadline tomorrow"
+    ]
+  },
+  {
+    "id": "tw-028",
+    "topic": "tech-work",
+    "hindi": "Meeting ke baad task X ko switch karna hoga",
+    "accepted": [
+      "After the meeting, I’ll switch to task X",
+      "I need to switch to task X after the meeting",
+      "After the meeting, I’ll move on to task X"
+    ],
+    "correctPhrase": "{I need to switch to task X} after the {meeting}",
+    "pattern": "{After the {meeting}, I’ll switch to {task}}",
+    "variations": [
+      "I need to switch to task X after the meeting"
+    ]
+  },
+  {
+    "id": "tw-029",
+    "topic": "tech-work",
+    "hindi": "Remote work mein connection issue hai, kaunse steps lene chahiye?",
+    "accepted": [
+      "What steps should I take for the connection issue in remote work?",
+      "What should I do about the connection issue while working remotely?",
+      "How can I resolve the connection issue while working remotely?",
+      "What steps should I follow for the connection issue in remote work?"
+    ],
+    "correctPhrase": "What steps should I {take} for the {connection issue} in {remote work}?",
+    "pattern": "{What steps should I {action} for the {issue} in {work_mode}}",
+    "variations": [
+      "What should I do about the connection issue while working remotely?"
+    ]
+  },
+  {
+    "id": "tw-030",
+    "topic": "tech-work",
+    "hindi": "Kal ki meeting mein main report dekhna bhool gaya",
+    "accepted": [
+      "I forgot to go through the report for yesterday's meeting",
+      "I didn't check the report for yesterday's meeting",
+      "I missed reviewing the report for yesterday's meeting"
+    ],
+    "correctPhrase": "{I} forgot to {go through the report} for {yesterday's meeting}",
+    "pattern": "{subject} forgot to {verb} {object} for {time}",
+    "variations": [
+      "I forgot to review the report for yesterday's meeting",
+      "I didn't go through the report for yesterday's meeting"
+    ]
+  },
+  {
+    "id": "tw-031",
+    "topic": "tech-work",
+    "hindi": "Code review ke baad hamein kuch changes karne hain",
+    "accepted": [
+      "We need to make some changes after the code review",
+      "After the code review, we should tweak some parts",
+      "We have to adjust a few things following the review"
+    ],
+    "correctPhrase": "{We} need to {make} some {changes} after {the code review}",
+    "pattern": "{subject} need to {verb} some {object} after {preposition}",
+    "variations": [
+      "We need to tweak a few things after the review",
+      "After the code review we should adjust some parts"
+    ]
+  },
+  {
+    "id": "tw-032",
+    "topic": "tech-work",
+    "hindi": "Main aaj ka deadline miss karne wala hoon",
+    "accepted": [
+      "I'm going to miss today's deadline",
+      "I will miss the deadline today",
+      "I'm going to miss today's due date"
+    ],
+    "correctPhrase": "{I'm} going to {miss today's due date}",
+    "pattern": "{subject} going to {verb} {time} deadline",
+    "variations": [
+      "I'm going to miss today's due date",
+      "I'll miss the deadline today"
+    ]
+  },
+  {
+    "id": "tw-033",
+    "topic": "tech-work",
+    "hindi": "Kya main aapki code merge kar sakta hoon?",
+    "accepted": [
+      "Can I merge your code?",
+      "May I merge your code?",
+      "May I go ahead and merge your code"
+    ],
+    "correctPhrase": "Can I merge your code?",
+    "pattern": "{modal} {subject} {verb} {object}",
+    "variations": [
+      "May I merge your code?",
+      "Can I go ahead and merge your code"
+    ]
+  },
+  {
+    "id": "tw-034",
+    "topic": "tech-work",
+    "hindi": "Remote ka kaam karne se hamari productivity badh gayi",
+    "accepted": [
+      "Working remotely has increased our productivity",
+      "Remote work has boosted our productivity",
+      "Remote working has improved our productivity"
+    ],
+    "correctPhrase": "{Remote work} has {boosted} our {productivity}",
+    "pattern": "{verb} {preposition} has {verb} our {object}",
+    "variations": [
+      "Remote work has boosted our productivity",
+      "Remote working has improved our productivity"
+    ]
+  },
+  {
+    "id": "tw-035",
+    "topic": "tech-work",
+    "hindi": "Mere code ko review karoge?",
+    "accepted": [
+      "Can you review my code?",
+      "Will you review my code?",
+      "Could you review my code?",
+      "Please review my code.",
+      "Who is setting tomorrow’s deadline?"
+    ],
+    "correctPhrase": "Please review my code.",
+    "pattern": "{Who} {is setting} {tomorrow’s deadline}",
+    "variations": [
+      "Who is setting today’s deadline?",
+      "Who is setting the project deadline?"
+    ]
+  },
+  {
+    "id": "tw-036",
+    "topic": "tech-work",
+    "hindi": "Main code review ke liye aaj subah aap se milna chahta hoon",
+    "accepted": [
+      "Can we have a code review meeting this morning?",
+      "Could we schedule a code review for this morning?",
+      "Let's do a code review today morning",
+      "Do you have time for a code review this morning?",
+      "Can we meet for a code review today morning"
+    ],
+    "correctPhrase": "Can we {meet for} a code review {today morning}",
+    "pattern": "Can we {verb phrase} a code review {time phrase}?",
+    "variations": [
+      "Can we schedule a code review for this morning?",
+      "Let's do a code review today morning"
+    ]
+  },
+  {
+    "id": "tw-037",
+    "topic": "tech-work",
+    "hindi": "Kya aap is project ki deadline ko extend kar sakte hain?",
+    "accepted": [
+      "Can you extend the deadline for this project?",
+      "Could we push the deadline for this project?",
+      "Is it possible to extend the project deadline?",
+      "Can you push the deadline for this project?",
+      "Could we push the deadline?",
+      "Can we push the deadline for the project?"
+    ],
+    "correctPhrase": "Can you {push} the deadline for {this project}?",
+    "pattern": "Can you {verb phrase} the deadline for {noun phrase}?",
+    "variations": [
+      "Could we push the deadline for this project?",
+      "Is it possible to extend the project deadline?"
+    ]
+  },
+  {
+    "id": "tw-038",
+    "topic": "tech-work",
+    "hindi": "Mujhe deployment ke baad koi error aa raha hai, madad chahiye",
+    "accepted": [
+      "I ran into an error after deployment, can you help?",
+      "There's an error after deployment, I need help",
+      "I need help with an error after the deployment",
+      "Help needed with an error post deployment",
+      "I have an error after deployment, can you help"
+    ],
+    "correctPhrase": "I {have} an error after deployment, can you {help}",
+    "pattern": "I {verb phrase} an error after deployment, can you {verb phrase}?",
+    "variations": [
+      "There's an error after deployment, I need help",
+      "I need help with an error after the deployment"
+    ]
+  },
+  {
+    "id": "tw-039",
+    "topic": "tech-work",
+    "hindi": "Kya main aaj ke standup me absent rah sakta hoon?",
+    "accepted": [
+      "Can I skip today's standup?",
+      "Is it okay if I miss the standup today?",
+      "May I be absent from today's standup?",
+      "Can I be absent from the standup today?",
+      "Is it fine if I skip the standup today?",
+      "May I miss the standup today?"
+    ],
+    "correctPhrase": "Can I {be absent from the} standup {today}?",
+    "pattern": "Can I {verb phrase} {time phrase} standup?",
+    "variations": [
+      "Is it okay if I miss the standup today?",
+      "May I be absent from today's standup?"
+    ]
+  },
+  {
+    "id": "tw-040",
+    "topic": "tech-work",
+    "hindi": "Remote work karne ke baad, main meeting mein der se aa gaya",
+    "accepted": [
+      "I was late to the meeting after working remotely",
+      "I arrived late to the meeting after working remotely",
+      "I got delayed to the meeting because I was remote",
+      "I came late to the meeting after working remotely",
+      "I was late to the meeting after working from home"
+    ],
+    "correctPhrase": "I was {late} to the meeting after {working} remotely",
+    "pattern": "I was {adverb} to the meeting after {verb phrase} remotely",
+    "variations": [
+      "I arrived late to the meeting after working remotely",
+      "I was delayed to the meeting because I was remote"
+    ]
+  },
+  {
+    "id": "tw-041",
+    "topic": "tech-work",
+    "hindi": "Code review ke liye main aapke comment wait kar raha hun.",
+    "accepted": [
+      "I'm waiting for your comments on the code review.",
+      "I’m awaiting your feedback for the code review.",
+      "I need your review comments for the code."
+    ],
+    "correctPhrase": "I need your review comments for the code.",
+    "pattern": "I’m awaiting your {feedback} for the {review}.",
+    "variations": [
+      "I’m waiting for your comments on the code review."
+    ]
+  },
+  {
+    "id": "tw-042",
+    "topic": "tech-work",
+    "hindi": "Deploy ke baad system crash ho gaya.",
+    "accepted": [
+      "The system crashed after the deploy.",
+      "After the deploy, the system went down.",
+      "The deployment caused a system crash."
+    ],
+    "correctPhrase": "{After} the {deploy, the} system {went down}.",
+    "pattern": "The system {crashed} after the {deploy}.",
+    "variations": [
+      "After the deploy, the system went down."
+    ]
+  },
+  {
+    "id": "tw-043",
+    "topic": "tech-work",
+    "hindi": "Mujhe project ke liye help chahiye.",
+    "accepted": [
+      "I need help with the project.",
+      "I could use some help on the project.",
+      "Could you assist me with the project?"
+    ],
+    "correctPhrase": "I need {help} with the {project}.",
+    "pattern": "I need {help} with the {project}.",
+    "variations": [
+      "I could use some help on the project."
+    ]
+  },
+  {
+    "id": "tw-044",
+    "topic": "tech-work",
+    "hindi": "Kal ki meeting ka agenda kya hai?",
+    "accepted": [
+      "What is the agenda for tomorrow’s meeting?",
+      "Can you share the agenda for tomorrow's meeting?",
+      "Tell me the agenda of tomorrow’s meeting."
+    ],
+    "correctPhrase": "What is the {agenda} for tomorrow’s {meeting}?",
+    "pattern": "What is the {agenda} for tomorrow’s {meeting}?",
+    "variations": [
+      "Can you share the agenda for tomorrow's meeting."
+    ]
+  },
+  {
+    "id": "tw-045",
+    "topic": "tech-work",
+    "hindi": "Mujhe kal ki deadline se pehle code review karna hai",
+    "accepted": [
+      "I need to finish the code review before tomorrow's deadline",
+      "I have to complete the code review before the deadline tomorrow",
+      "I need to get the code review done before tomorrow's deadline"
+    ],
+    "correctPhrase": "I need to {finish} the {code review} before {tomorrow's deadline}",
+    "pattern": "I need to {finish/complete} the {code review} before {tomorrow's deadline}",
+    "variations": [
+      "I have to wrap up the code review before the deadline tomorrow",
+      "I must finish the code review before tomorrow's deadline"
+    ]
+  },
+  {
+    "id": "tw-046",
+    "topic": "tech-work",
+    "hindi": "Kya aap is feature ke liye deployment schedule bata sakte hain?",
+    "accepted": [
+      "Can you let me know the deployment schedule for this feature?",
+      "Could you tell me the deployment schedule for this feature?",
+      "What is the deployment schedule for this feature?",
+      "Can you share the deployment schedule for this feature?"
+    ],
+    "correctPhrase": "Can you {share} the {deployment schedule} for this {feature}?",
+    "pattern": "Can you {let me know/tell me/share} the {deployment schedule} for this {feature}?",
+    "variations": [
+      "Could you tell me the deployment schedule for this feature?",
+      "What is the deployment schedule for this feature?"
+    ]
+  },
+  {
+    "id": "tw-047",
+    "topic": "tech-work",
+    "hindi": "Mujhe apne manager se ek meeting schedule karni hai",
+    "accepted": [
+      "I need to schedule a meeting with my manager",
+      "I have to set up a meeting with my manager",
+      "I need to arrange a meeting with my manager"
+    ],
+    "correctPhrase": "I need to {arrange} a {meeting} with {my manager}",
+    "pattern": "I need to {schedule/arrange/set up} a {meeting} with {my manager}",
+    "variations": [
+      "I have to set up a meeting with my manager",
+      "I need to arrange a meeting with my manager"
+    ]
+  },
+  {
+    "id": "tw-048",
+    "topic": "tech-work",
+    "hindi": "Yeh task mujhe lagta hai ki kaafi mushkil hai, koi madad kar sakte hain?",
+    "accepted": [
+      "This task seems pretty tough, could you help me?",
+      "I think this task is quite difficult, can you help me?",
+      "Can you help me with this task?",
+      "This task looks tough, can you help me?"
+    ],
+    "correctPhrase": "This {task} seems {pretty tough}, could you {help me}?",
+    "pattern": "This {task} seems {pretty/tough/difficult}, could you {help me/could you help me}?",
+    "variations": [
+      "I think this task is quite difficult, can you help me?",
+      "Can you help me with this task?"
+    ]
+  },
+  {
+    "id": "tw-049",
+    "topic": "tech-work",
+    "hindi": "Main remote kaam kar raha hoon, isliye kal ka standup online hi hoga",
+    "accepted": [
+      "I'm working remotely, so tomorrow's standup will be online",
+      "Since I'm working from home, tomorrow's standup will be online",
+      "As I'm working remotely, tomorrow's standup will be online"
+    ],
+    "correctPhrase": "I'm working remotely, so tomorrow's standup will be online",
+    "pattern": "I{am/am'} working {remotely/from home}, so {tomorrow's standup} will be {online/virtual}",
+    "variations": [
+      "I'm working from home, so tomorrow's standup will be online",
+      "As I’m working remotely, tomorrow’s standup will be online"
+    ]
+  },
+  {
+    "id": "tw-050",
+    "topic": "tech-work",
+    "hindi": "Main kal ka project deadline miss karne se darr raha hoon.",
+    "accepted": [
+      "I'm worried about missing tomorrow's project deadline.",
+      "I'm scared that I'll miss tomorrow's project deadline.",
+      "I'm concerned about missing tomorrow's deadline.",
+      "I'm uneasy about falling behind tomorrow's project deadline."
+    ],
+    "correctPhrase": "I'm concerned about missing tomorrow's deadline.",
+    "pattern": "I'm {feeling} about {action} {time}.",
+    "variations": [
+      "I'm anxious about dropping the upcoming deadline.",
+      "I'm uneasy about failing to meet the next deadline."
+    ]
+  }
+]

@@ -1,0 +1,839 @@
+[
+  {
+    "id": "iv-001",
+    "topic": "interview",
+    "hindi": "Mujhe lagta hai ki main team ke saath kaam karne mein bahut accha hoon",
+    "accepted": [
+      "I think I'm very good at working with teams",
+      "I am really good at teamwork",
+      "I feel I work well with teams"
+    ],
+    "correctPhrase": "I think {I'm very good at working} with {teams}",
+    "pattern": "I think {adjective} {verb} with {noun}",
+    "variations": [
+      "I feel I work well with teams",
+      "I am really good at teamwork"
+    ]
+  },
+  {
+    "id": "iv-002",
+    "topic": "interview",
+    "hindi": "Mujhe kaam mein kuch gaps hain, jaise ki advanced Excel skills",
+    "accepted": [
+      "I have some gaps in my skills, like advanced Excel",
+      "I need to improve my Excel skills",
+      "I'm lacking advanced Excel skills"
+    ],
+    "correctPhrase": "I have {some} gaps in my {skills}, like {advanced Excel}",
+    "pattern": "I have {number} gaps in my {noun}, like {skill}",
+    "variations": [
+      "I need to improve my Excel skills",
+      "I'm lacking advanced Excel skills"
+    ]
+  },
+  {
+    "id": "iv-003",
+    "topic": "interview",
+    "hindi": "Mujhe 8 mahine ke baad salary 12 lakh tak badalne ki ummeed hai",
+    "accepted": [
+      "I expect my salary to rise to 12 lakh after eight months",
+      "I hope my salary increases to 12 lakh in eight months",
+      "I plan to have a 12 lakh salary after eight months"
+    ],
+    "correctPhrase": "I expect my {salary} to {rise} to {12 lakh} after {eight months}",
+    "pattern": "I expect my {noun} to {verb} to {amount} after {time}",
+    "variations": [
+      "I hope my salary increases to 12 lakh in eight months",
+      "I plan to have a 12 lakh salary after eight months"
+    ]
+  },
+  {
+    "id": "iv-004",
+    "topic": "interview",
+    "hindi": "Yahan ka kaam mere career goals ke saath match karta hai",
+    "accepted": [
+      "This job matches my career goals",
+      "The work here aligns with my career goals",
+      "It fits with what I want for my career"
+    ],
+    "correctPhrase": "This {job} matches my {career} goals",
+    "pattern": "This {noun} matches my {noun} goals",
+    "variations": [
+      "The work here aligns with my career goals",
+      "It fits with what I want for my career"
+    ]
+  },
+  {
+    "id": "iv-005",
+    "topic": "interview",
+    "hindi": "Mujhe yeh company ki culture aur growth opportunities kaafi acchi lagi",
+    "accepted": [
+      "I liked the company culture and growth opportunities here",
+      "The culture and growth prospects are great",
+      "I appreciate the culture and growth chances"
+    ],
+    "correctPhrase": "I liked the {company culture} and {growth opportunities} here",
+    "pattern": "I liked the {noun} {noun} and {noun} here",
+    "variations": [
+      "The culture and growth prospects are great",
+      "I appreciate the culture and growth chances"
+    ]
+  },
+  {
+    "id": "iv-006",
+    "topic": "interview",
+    "hindi": "Maine pehle se 5 saal ka anubhav kiya hai, par abhi bhi mujhe coding mein kuch gaps feel hote hain.",
+    "accepted": [
+      "I have 5 years of experience, but I still have some gaps in coding.",
+      "I have five years of experience, yet I still feel there are gaps in my coding.",
+      "I’ve worked for five years, but there are still gaps in my coding skills.",
+      "I have 5 years of experience, though I still have some coding gaps.",
+      "I have 5 years of experience, yet I still have some gaps in my coding."
+    ],
+    "correctPhrase": "I have {5} years of experience, {though I still have some coding gaps}.",
+    "pattern": "I have {number} years of experience, yet I still have some gaps in my {skill}.",
+    "variations": [
+      "I have 3 years of experience, yet I still have some gaps in my data analysis."
+    ]
+  },
+  {
+    "id": "iv-007",
+    "topic": "interview",
+    "hindi": "Yadi aapko koi aur sawal na ho, toh main yahaan se nikalne ke liye tayyar hoon.",
+    "accepted": [
+      "If you don’t have any more questions, I’m ready to leave.",
+      "If there are no more questions, I’m ready to depart.",
+      "If you have no further questions, I’m ready to go.",
+      "If you have no more questions, I’m ready to exit.",
+      "If you have no more questions, I’m ready to go."
+    ],
+    "correctPhrase": "If you have no {more} questions, {I’m ready to go}.",
+    "pattern": "If you have no {adjective} questions, I’m ready to {verb}.",
+    "variations": [
+      "If you have no further questions, I’m ready to leave."
+    ]
+  },
+  {
+    "id": "iv-008",
+    "topic": "interview",
+    "hindi": "Mere paas ek chhota sa gap hai, lekin main usse padhai se bhar sakta hoon.",
+    "accepted": [
+      "I have a small gap, but I can fill it with studies.",
+      "I have a brief gap, but I can cover it with learning.",
+      "I have a minor gap, but I can make up for it by studying.",
+      "I have a little gap, but I can compensate with education."
+    ],
+    "correctPhrase": "I have a {small gap}, but I can fill it with {studies}.",
+    "pattern": "I have a {gap}, but I can fill it with {solution}",
+    "variations": [
+      "I have a brief gap, but I can cover it with training",
+      "I have a minor gap, but I can compensate with courses"
+    ]
+  },
+  {
+    "id": "iv-009",
+    "topic": "interview",
+    "hindi": "Mujhe lagta hai ki mera sabse bada kamzori teamwork se judi hui hai.",
+    "accepted": [
+      "I think my biggest weakness is teamwork.",
+      "My biggest weakness, I believe, is working in a team.",
+      "I feel my greatest weakness is teamwork.",
+      "The biggest weakness I have is teamwork.",
+      "Teamwork is my biggest weakness, I think."
+    ],
+    "correctPhrase": "I {think} my biggest {weakness} is {teamwork}.",
+    "pattern": "I {verb} my biggest {noun} is {noun}.",
+    "variations": [
+      "I believe my biggest flaw is teamwork.",
+      "My greatest weakness, I think, is teamwork."
+    ]
+  },
+  {
+    "id": "iv-010",
+    "topic": "interview",
+    "hindi": "Yeh company ke liye apply karne ka main reason yeh hai ki yahan innovative projects hote hain.",
+    "accepted": [
+      "The main reason I'm applying to this company is that it has innovative projects.",
+      "I am applying here mainly because of the innovative projects.",
+      "I applied to this company because of its innovative projects.",
+      "My main reason for applying is the innovative projects here.",
+      "I apply because of the innovative projects at this company."
+    ],
+    "correctPhrase": "{I apply because of} the {innovative projects at this company}.",
+    "pattern": "The main reason I'm applying to this company is that it has {adjective} {noun}.",
+    "variations": [
+      "I applied here because of the innovative projects.",
+      "My reason for applying is the innovative projects."
+    ]
+  },
+  {
+    "id": "iv-011",
+    "topic": "interview",
+    "hindi": "Maine is job ke liye ₹10,00,000 per saal ka salary maang kiya hai.",
+    "accepted": [
+      "I asked for a salary of 10 lakh per year for this job.",
+      "I requested a salary of 10 lakh per annum for this position.",
+      "I have asked for 10 lakh per year for this job.",
+      "My salary demand is 10 lakh per annum for this role.",
+      "I am seeking a salary of 10 lakh a year for this job."
+    ],
+    "correctPhrase": "I {have} asked for {10 lakh per year for this job}.",
+    "pattern": "I asked for a salary of {number} per year for this {noun}.",
+    "variations": [
+      "I requested a salary of 10 lakh per annum for this position.",
+      "My salary demand is 10 lakh per annum for this role."
+    ]
+  },
+  {
+    "id": "iv-012",
+    "topic": "interview",
+    "hindi": "Mujhe lagta hai ki main team lead ke liye theek hoon kyunki main logon ko motivate karta hoon.",
+    "accepted": [
+      "I think I would be a good fit as a team lead because I motivate people.",
+      "I believe I would make a good team lead since I inspire my colleagues.",
+      "I feel I could work well as a team leader because I motivate the team.",
+      "I think I would serve well as a team lead because I motivate others."
+    ],
+    "correctPhrase": "I think I would be a good fit as a {team lead} because I {motivate people}.",
+    "pattern": "I think I would be a good fit as a {role} because I {action}.",
+    "variations": [
+      "I believe I would make a good team leader since I inspire my colleagues."
+    ]
+  },
+  {
+    "id": "iv-013",
+    "topic": "interview",
+    "hindi": "Mere skillset me ek kami hai, Python ka experience kam hai.",
+    "accepted": [
+      "I have a gap in my skill set—my experience with Python is limited.",
+      "One weakness is that I haven't worked much with Python.",
+      "I lack experience in Python, which is a gap in my abilities.",
+      "My skillset has a shortcoming: limited Python experience."
+    ],
+    "correctPhrase": "{One weakness is that} I {haven't worked much with Python}.",
+    "pattern": "I have a {gap} in my skill set—my experience with {skill} is limited.",
+    "variations": [
+      "I lack experience in Python, which is a gap in my abilities."
+    ]
+  },
+  {
+    "id": "iv-014",
+    "topic": "interview",
+    "hindi": "Maine pichle company me 8 lakh per saal kamaya, aur ab mere liye 10 lakh ka salary acceptable hai.",
+    "accepted": [
+      "I earned 800,000 last year, and I am looking for a 1,000,000 salary.",
+      "Last year I made 8 lakh, and I would accept 10 lakh now.",
+      "I earned eight lakhs last year, and a salary of ten lakhs is acceptable.",
+      "I was paid 8 lakh last year, and I’m aiming for 10 lakh now."
+    ],
+    "correctPhrase": "{Last year} I {made 8 lakh, and I would accept 10 lakh now}.",
+    "pattern": "I earned {lastSalary} last year, and I am looking for a {currentSalary} salary.",
+    "variations": [
+      "Last year I made 8 lakh, and I would accept 10 lakh now."
+    ]
+  },
+  {
+    "id": "iv-015",
+    "topic": "interview",
+    "hindi": "Mujhe aapki company ki innovation aur culture pasand hai, isliye apply kiya.",
+    "accepted": [
+      "I like your company’s innovation and culture, so I applied.",
+      "Your company’s culture and innovation appeal to me, hence my application.",
+      "I applied because I admire the innovation and culture here.",
+      "I’m interested in your company’s culture and innovation, so I applied."
+    ],
+    "correctPhrase": "I like your company’s {innovation} and {culture}, so I applied.",
+    "pattern": "I like your company’s {quality} and {culture}, so I applied.",
+    "variations": [
+      "I’m interested in your company’s culture and innovation, so I applied."
+    ]
+  },
+  {
+    "id": "iv-016",
+    "topic": "interview",
+    "hindi": "Mujhe teamwork mein bahut acchi lagti hai.",
+    "accepted": [
+      "Teamwork is one of my strengths.",
+      "I'm really good at teamwork.",
+      "I excel at working in a team."
+    ],
+    "correctPhrase": "{Teamwork} is one of my {strengths}.",
+    "pattern": "{Verb} {noun} is one of my {attribute}.",
+    "variations": [
+      "I thrive on teamwork.",
+      "Teamwork comes naturally to me."
+    ]
+  },
+  {
+    "id": "iv-017",
+    "topic": "interview",
+    "hindi": "Main is company ko kyun chunna chahata hoon?",
+    "accepted": [
+      "Why do I want to work for this company?",
+      "What makes me choose this company?",
+      "Why am I interested in working here?",
+      "Can you explain why I want to work for this company?",
+      "I would like to know why I should pick this company."
+    ],
+    "correctPhrase": "Why {do} I {want to work} for {this company}?",
+    "pattern": "Why {be} I {want to work} for {this company}?",
+    "variations": [
+      "Why would I want to work for this company?",
+      "Why does it appeal to me to work here?"
+    ]
+  },
+  {
+    "id": "iv-018",
+    "topic": "interview",
+    "hindi": "Mujhe is position me kya challenges face honge?",
+    "accepted": [
+      "What challenges will I face in this role?",
+      "What are the challenges I might encounter?",
+      "Which challenges should I expect in this job?",
+      "Can you tell me what challenges are likely?",
+      "What obstacles could I expect in this position?"
+    ],
+    "correctPhrase": "What {challenges will I face} in {this role}?",
+    "pattern": "What {challenges} {will I face} in {this role}?",
+    "variations": [
+      "What challenges might I encounter in this role?",
+      "What obstacles should I anticipate in this position?"
+    ]
+  },
+  {
+    "id": "iv-019",
+    "topic": "interview",
+    "hindi": "Maine apni salary kya expect karna chahiye?",
+    "accepted": [
+      "What salary should I expect?",
+      "How much salary should I aim for?",
+      "What is the expected salary for this role?",
+      "What salary range can I anticipate?",
+      "How much should I ask for?"
+    ],
+    "correctPhrase": "How much should I ask for?",
+    "pattern": "What {salary} {should I expect}?",
+    "variations": [
+      "How much salary can I anticipate?",
+      "What is the expected salary?"
+    ]
+  },
+  {
+    "id": "iv-020",
+    "topic": "interview",
+    "hindi": "Mere paas kaun si skills hain jo is job ke liye strong hai?",
+    "accepted": [
+      "What skills do I have that are strong for this job?",
+      "Which of my skills are a good fit here?",
+      "What strengths can I bring to this position?",
+      "What skills do I possess that fit this role?",
+      "What are my strong points for this job?"
+    ],
+    "correctPhrase": "What {skills do I have} that are {strong} for {this job}?",
+    "pattern": "What {skills} {do I have} that are {strong} for {this job}?",
+    "variations": [
+      "Which of my skills are a good fit for this role?",
+      "What strengths can I bring to this position?"
+    ]
+  },
+  {
+    "id": "iv-021",
+    "topic": "interview",
+    "hindi": "Maine pichhle 5 saalon mein 3 bade project successfully complete kiye hain.",
+    "accepted": [
+      "I have successfully completed three major projects over the last five years.",
+      "I have finished three big projects successfully in the past five years.",
+      "Over the past five years, I've completed three major projects successfully.",
+      "I have delivered three significant projects in the last five years.",
+      "I have successfully wrapped up three big projects in the past five years."
+    ],
+    "correctPhrase": "I have {finished three big projects} successfully {in the past five years}.",
+    "pattern": "I have successfully completed {number} major projects over the last {number} years.",
+    "variations": [
+      "I have finished three significant projects in the past five years.",
+      "I have completed three big projects successfully in the last five years."
+    ]
+  },
+  {
+    "id": "iv-022",
+    "topic": "interview",
+    "hindi": "Maine aapse baat karke bahut khush hua, aapko dhanyavaad.",
+    "accepted": [
+      "It was great talking to you, thank you very much.",
+      "I really enjoyed our conversation, thank you.",
+      "Thank you for the conversation, it was a pleasure.",
+      "I appreciated our chat, thank you.",
+      "Thanks for speaking with me, I enjoyed it."
+    ],
+    "correctPhrase": "{It was great talking to you}, thank you {very much}.",
+    "pattern": "Thank you for the {noun}, it was a {adj}.",
+    "variations": [
+      "It was great talking to you, thank you very much.",
+      "I appreciated our chat, thank you."
+    ]
+  },
+  {
+    "id": "iv-023",
+    "topic": "interview",
+    "hindi": "Mujhe lagta hai ki main team mein leadership aur problem solving skills ke liye strong hoon.",
+    "accepted": [
+      "I believe I'm strong in leadership and problem solving within a team.",
+      "I'm confident in my leadership and problem-solving skills when working in a team.",
+      "I think I bring strong leadership and problem-solving abilities to a team.",
+      "I consider myself strong in leadership and problem-solving when working in a team."
+    ],
+    "correctPhrase": "I believe I'm strong in leadership and problem solving within a team.",
+    "pattern": "{I consider myself} {strong in} {leadership and problem-solving} {when working in a team}",
+    "variations": [
+      "I think I'm strong in leadership and problem-solving when working in a team."
+    ]
+  },
+  {
+    "id": "iv-024",
+    "topic": "interview",
+    "hindi": "Mere liye sabse bada challenge meri time management skills ko improve karna hai.",
+    "accepted": [
+      "My biggest challenge is to improve my time management skills.",
+      "The biggest thing I need to work on is better time management.",
+      "I need to work on enhancing my time management skills.",
+      "My main challenge is improving my time management skills."
+    ],
+    "correctPhrase": "I need to work on enhancing my time management skills.",
+    "pattern": "{My biggest challenge is} {to improve} {my time management skills}",
+    "variations": [
+      "I need to work on better time management skills."
+    ]
+  },
+  {
+    "id": "iv-025",
+    "topic": "interview",
+    "hindi": "Mujhe is company ki culture aur growth opportunities bahut pasand aayi, isliye main yahan kaam karna chahta hoon.",
+    "accepted": [
+      "I liked this company's culture and growth opportunities, so I want to work here.",
+      "I appreciate the culture and growth chances here, which is why I want to join.",
+      "I am drawn to this company's culture and growth prospects, so I want to be part of it.",
+      "I love the culture and growth opportunities, hence my desire to work here."
+    ],
+    "correctPhrase": "I love the culture and growth opportunities, hence my desire to work here.",
+    "pattern": "{I liked} {this company's culture and growth opportunities}, {so I want to work here}",
+    "variations": [
+      "I appreciate the culture and growth chances here, which is why I want to join."
+    ]
+  },
+  {
+    "id": "iv-026",
+    "topic": "interview",
+    "hindi": "Yeh position ke liye aapko kis tarah ka candidate chahiye, iske baare mein main aapko koi prashn poochna chahunga?",
+    "accepted": [
+      "I'd like to ask what kind of candidate you are looking for for this position.",
+      "Can I ask what type of candidate you want for this role?",
+      "Could you tell me what kind of candidate fits this position?",
+      "I have a question about what kind of candidate you need for this role."
+    ],
+    "correctPhrase": "Can I ask what type of candidate you want for this role?",
+    "pattern": "{I'd like to ask} {what kind of candidate} {you are looking for} {for this position}",
+    "variations": [
+      "Can I ask what type of candidate you want for this role?"
+    ]
+  },
+  {
+    "id": "iv-027",
+    "topic": "interview",
+    "hindi": "Main hamesha team ke saath milkar kaam karna pasand karta hoon",
+    "accepted": [
+      "I really enjoy collaborating with a team",
+      "I like working in a team environment",
+      "I enjoy teamwork and working together with others",
+      "I prefer working with a team"
+    ],
+    "correctPhrase": "I {prefer working} with a {team}",
+    "pattern": "I {verb phrase} with a {noun phrase}",
+    "variations": [
+      "I love collaborating with a team",
+      "I enjoy working with a team"
+    ]
+  },
+  {
+    "id": "iv-028",
+    "topic": "interview",
+    "hindi": "Mujhe ek aisa kaam chahiye jahan mein apne skills ka use kar sakun",
+    "accepted": [
+      "I'm looking for a job where I can use my skills",
+      "I want a role that lets me apply my skills",
+      "I need a position that lets me use my skills",
+      "I seek a job that utilizes my skills"
+    ],
+    "correctPhrase": "{I'm looking for a job where} I {can use my skills}",
+    "pattern": "I am {verb phrase} for a {noun phrase} that {verb phrase} my {noun phrase}",
+    "variations": [
+      "I want a role that lets me apply my skills",
+      "I need a position that lets me use my skills"
+    ]
+  },
+  {
+    "id": "iv-029",
+    "topic": "interview",
+    "hindi": "Mujhe is company ke culture mein bahut interest hai",
+    "accepted": [
+      "I am very interested in the culture of this company",
+      "I have a strong interest in this company’s culture",
+      "I’m really into the culture here",
+      "I’m very curious about the culture of this company"
+    ],
+    "correctPhrase": "I am {very interested} in the {culture} of {this company}",
+    "pattern": "I am {adjective phrase} in the {noun phrase} of {noun phrase}",
+    "variations": [
+      "I’m very curious about the culture here",
+      "I’m really into the culture here"
+    ]
+  },
+  {
+    "id": "iv-030",
+    "topic": "interview",
+    "hindi": "Maine apni salary ke liye 12 lakh ka request kiya",
+    "accepted": [
+      "I requested a salary of 12 lakhs",
+      "I asked for a salary of 12 lakhs",
+      "I put 12 lakh in my salary request",
+      "I proposed 12 lakhs for my salary"
+    ],
+    "correctPhrase": "I requested a {salary} of {12 lakhs}",
+    "pattern": "I requested a {noun phrase} of {number}",
+    "variations": [
+      "I asked for a salary of 12 lakhs",
+      "I proposed 12 lakhs for my salary"
+    ]
+  },
+  {
+    "id": "iv-031",
+    "topic": "interview",
+    "hindi": "Mujhe apne sabse bade bal aur kamzori kaunse bata sakte hain?",
+    "accepted": [
+      "Can you tell me your greatest strengths and weaknesses?",
+      "What are your biggest strengths and where do you feel you could improve?",
+      "Could you share your main strengths and the areas where you think you could get better?",
+      "Tell me about your strongest points and your biggest challenges."
+    ],
+    "correctPhrase": "Can you tell me your {greatest strengths} and {weaknesses}?",
+    "pattern": "Can you tell me your {Noun} and {Noun}?",
+    "variations": [
+      "Could you tell me your biggest strengths and weaknesses?"
+    ]
+  },
+  {
+    "id": "iv-032",
+    "topic": "interview",
+    "hindi": "Aapko kitni salary chahiye is kaam ke liye?",
+    "accepted": [
+      "What salary are you expecting for this role?",
+      "How much salary do you need for this job?",
+      "What salary do you anticipate for this position?",
+      "What pay are you looking for in this role?"
+    ],
+    "correctPhrase": "What salary are you {expecting} for this {role}?",
+    "pattern": "What salary are you {Verb} for this {Noun}?",
+    "variations": [
+      "What pay do you anticipate for this position?"
+    ]
+  },
+  {
+    "id": "iv-033",
+    "topic": "interview",
+    "hindi": "Mujhe is role ke baare mein aur puchhna hai.",
+    "accepted": [
+      "I have a few more questions about this role.",
+      "Can I ask you some additional questions about the position?",
+      "I'd like to ask a few more questions about this job.",
+      "Do you mind if I ask more questions about the role?"
+    ],
+    "correctPhrase": "I have a few more {questions} about this {role}.",
+    "pattern": "I have a few more {Verb} about this {Noun}.",
+    "variations": [
+      "Can I ask you some additional questions about the position?"
+    ]
+  },
+  {
+    "id": "iv-034",
+    "topic": "interview",
+    "hindi": "Mujhe apni sabse badi majbooti ke baare mein bataana hai",
+    "accepted": [
+      "I want to talk about my biggest strength",
+      "I would like to discuss my strongest attribute",
+      "Let me tell you about my main strength"
+    ],
+    "correctPhrase": "{Let me tell you} about {my main strength}",
+    "pattern": "{verb} {pronoun} {verb} about {possessive} {noun}",
+    "variations": [
+      "I would like to discuss my strongest attribute",
+      "Let me tell you about my main strength"
+    ]
+  },
+  {
+    "id": "iv-035",
+    "topic": "interview",
+    "hindi": "Maine pichle interview mein is topic ko miss kar diya",
+    "accepted": [
+      "I missed that topic in my last interview",
+      "I forgot to cover that point last time",
+      "I didn't get to discuss that in the previous interview"
+    ],
+    "correctPhrase": "{I missed} that {topic} in {my last interview}",
+    "pattern": "{pronoun} {verb} that {noun} in {possessive} {noun}",
+    "variations": [
+      "I forgot to cover that point last time",
+      "I didn't get to discuss that in the previous interview"
+    ]
+  },
+  {
+    "id": "iv-036",
+    "topic": "interview",
+    "hindi": "Main yeh samjhaana chahta hoon ki main is company mein kaam kyon karna chahta hoon",
+    "accepted": [
+      "I want to explain why I want to work here",
+      "I would like to say why I want to work at this company",
+      "Let me explain why I'm interested in this company"
+    ],
+    "correctPhrase": "{I want to explain} why {I want to work here}",
+    "pattern": "{pronoun} {verb} {verb} why {pronoun} {verb} {prep} {possessive} {noun}",
+    "variations": [
+      "I would like to say why I want to work at this company",
+      "Let me explain why I'm interested in this company"
+    ]
+  },
+  {
+    "id": "iv-037",
+    "topic": "interview",
+    "hindi": "Kya aap mere se koi sawaal poochna chahenge?",
+    "accepted": [
+      "Do you have any questions for me?",
+      "Is there anything you'd like to ask?",
+      "Can you ask me anything?",
+      "Will you ask me any questions?",
+      "Do you want to ask me anything?",
+      "Do you have any queries for me?"
+    ],
+    "correctPhrase": "Can you ask me anything?",
+    "pattern": "{verb} {possessive} {noun} {prep} {pronoun} ?",
+    "variations": [
+      "Is there anything you'd like to ask?",
+      "Can you ask me anything?"
+    ]
+  },
+  {
+    "id": "iv-038",
+    "topic": "interview",
+    "hindi": "Mujhe aapki company ke baare mein aur jaanna hai.",
+    "accepted": [
+      "I would like to know more about your company.",
+      "Can I get more information about your company?",
+      "Could you tell me more about your organization?",
+      "I’m interested in learning more about your company."
+    ],
+    "correctPhrase": "I would like to {know} more about {your company}.",
+    "pattern": "I would like to {learn/get} more about {your/company}.",
+    "variations": [
+      "Can I get more information about your organization?",
+      "I’m interested in learning more about your company."
+    ]
+  },
+  {
+    "id": "iv-039",
+    "topic": "interview",
+    "hindi": "Aapki company mein kaunse growth opportunities maujood hain?",
+    "accepted": [
+      "What growth opportunities are available in your company?",
+      "Are there any growth opportunities in your organization?",
+      "What kind of growth prospects can I expect here?",
+      "Could you tell me about the growth opportunities here?",
+      "What advancement paths exist in your company?"
+    ],
+    "correctPhrase": "What {growth} opportunities are available in {your company}?",
+    "pattern": "What {growth/advancement} opportunities are available in {your/company}?",
+    "variations": [
+      "Are there any growth opportunities in your organization?",
+      "What advancement paths exist in your company?"
+    ]
+  },
+  {
+    "id": "iv-040",
+    "topic": "interview",
+    "hindi": "Aap mujhe is role ke liye salary range bata sakte hain?",
+    "accepted": [
+      "Can you share the salary range for this role?",
+      "Could you tell me the salary range for this position?",
+      "What is the salary range for this role?",
+      "Do you know the pay range for this job?"
+    ],
+    "correctPhrase": "Can you {share} the salary range for {this} role?",
+    "pattern": "Can you {share/let me know} the salary range for {this/that} role?",
+    "variations": [
+      "Could you tell me the salary range for this position?",
+      "What is the salary range for this role?"
+    ]
+  },
+  {
+    "id": "iv-041",
+    "topic": "interview",
+    "hindi": "Mujhe aapke team ke saath kaam karke bahut khushi hogi.",
+    "accepted": [
+      "I would be thrilled to work with your team.",
+      "It would be great to join your team.",
+      "I’d love to work alongside your team.",
+      "I’m excited about the possibility of working with your team."
+    ],
+    "correctPhrase": "I would be {thrilled} to work with {your team}.",
+    "pattern": "I would be {thrilled/excited} to work with {your/your team}.",
+    "variations": [
+      "It would be great to join your team.",
+      "I’d love to work alongside your team."
+    ]
+  },
+  {
+    "id": "iv-042",
+    "topic": "interview",
+    "hindi": "Mujhe kaam ka tajurba 5 saal ka hai aur main team lead banna chahta hoon",
+    "accepted": [
+      "I have five years of experience and I’d like to become a team lead",
+      "I’ve worked for five years and I want to move up to a team lead role",
+      "I’ve got five years of experience and I’d like to be a team lead",
+      "I’ve been in this field for five years and I aim to become a team lead"
+    ],
+    "correctPhrase": "I have {five years} of experience and {I’d like to become a team lead}",
+    "pattern": "I have {X} of experience and I’d like to {Y}",
+    "variations": [
+      "I’ve worked for five years and I want to move up to a team lead role"
+    ]
+  },
+  {
+    "id": "iv-043",
+    "topic": "interview",
+    "hindi": "Mujhe lagta hai ki main aapke team ko strong communication skills de sakta hoon",
+    "accepted": [
+      "I believe I can bring strong communication skills to your team",
+      "I think I can add strong communication skills to your team",
+      "I believe I can contribute strong communication skills to your team",
+      "I think I can provide strong communication skills to the team"
+    ],
+    "correctPhrase": "I think I can add strong communication skills to your team",
+    "pattern": "I believe I can {X} {Y} to your team",
+    "variations": [
+      "I think I can add strong communication skills to your team"
+    ]
+  },
+  {
+    "id": "iv-044",
+    "topic": "interview",
+    "hindi": "Aap is position ke liye kitni salary offer karte hain?",
+    "accepted": [
+      "What is the salary range for this position?",
+      "Could you tell me the salary range for this role?",
+      "What salary are you offering for this role?",
+      "What is the salary offered for this position?"
+    ],
+    "correctPhrase": "What is the {salary range} for this {position}?",
+    "pattern": "What is the {X} for this {Y}",
+    "variations": [
+      "Could you tell me the salary range for this role?"
+    ]
+  },
+  {
+    "id": "iv-045",
+    "topic": "interview",
+    "hindi": "Mujhe yeh company mein kaam karke kaafi excitement hai, kyunki yeh innovative solutions develop karti hai",
+    "accepted": [
+      "I’m really excited to work at this company because it develops innovative solutions",
+      "I’m excited to join this company as it works on innovative solutions",
+      "I’m thrilled about working at this company because it creates innovative solutions",
+      "I’m excited about this company because it develops innovative solutions"
+    ],
+    "correctPhrase": "I’m excited to join this company as it works on innovative solutions",
+    "pattern": "I’m {X} to work at this company because it {Y}",
+    "variations": [
+      "I’m excited to join this company as it works on innovative solutions"
+    ]
+  },
+  {
+    "id": "iv-046",
+    "topic": "interview",
+    "hindi": "Mujhe lagta hai ki main bahut tezi se kaam kar sakta hoon aur naye challenges ko samajhne mein maharat rakhta hoon.",
+    "accepted": [
+      "I think I'm able to work very fast and I'm good at learning new challenges.",
+      "I'm fast at work and I have a knack for tackling new challenges.",
+      "I can work quickly and I excel at picking up new challenges.",
+      "My work speed is high and I’m good at understanding new challenges."
+    ],
+    "correctPhrase": "{I'm fast at work and} I {have a knack for tackling new challenges}.",
+    "pattern": "I think I'm able to work {speed} and I'm good at {skill} new challenges.",
+    "variations": [
+      "I think I'm able to work very fast and I'm good at learning new challenges.",
+      "I think I'm able to work very fast and I'm good at tackling new challenges."
+    ]
+  },
+  {
+    "id": "iv-047",
+    "topic": "interview",
+    "hindi": "Mujhe lagta hai ki is company ka culture mere career goals ke sath match karta hai.",
+    "accepted": [
+      "I think this company’s culture matches my career goals.",
+      "I feel that the culture here aligns with my career objectives.",
+      "I believe this company's culture fits with my career plans.",
+      "I think this company’s culture is in line with my career goals."
+    ],
+    "correctPhrase": "I think this company’s culture {matches} my career {goals}.",
+    "pattern": "I think this company’s culture {verb} my career {noun}.",
+    "variations": [
+      "I think this company’s culture matches my career goals.",
+      "I believe this company’s culture fits with my career plans."
+    ]
+  },
+  {
+    "id": "iv-048",
+    "topic": "interview",
+    "hindi": "Mujhe aapke saath kaam karke bahut khushi hogi, kya aapko koi aur sawal hai?",
+    "accepted": [
+      "I would be happy to work with you, do you have any other questions?",
+      "I would love to work with you; do you have any more questions?",
+      "I’d be delighted to work with you, any other questions?",
+      "I would be pleased to work with you, do you have any further questions?"
+    ],
+    "correctPhrase": "I would be {happy} to work with you, do you have any {other questions}?",
+    "pattern": "I would be {adjective} to work with you, do you have any {question}?",
+    "variations": [
+      "I would be happy to work with you, do you have any other questions?",
+      "I would be delighted to work with you, any other questions?"
+    ]
+  },
+  {
+    "id": "iv-049",
+    "topic": "interview",
+    "hindi": "Shukriya aapka interview ke liye, main aapke feedback ka intezaar karunga.",
+    "accepted": [
+      "Thank you for the interview; I'll look forward to your feedback.",
+      "Thanks for the interview, I'll await your feedback.",
+      "I appreciate the interview, and I'll wait for your feedback.",
+      "Thank you for the interview; I’ll be looking forward to your feedback."
+    ],
+    "correctPhrase": "Thanks for the interview, I'll await your feedback.",
+    "pattern": "Thank you for {noun}; I'll {verb} to {noun}",
+    "variations": [
+      "Thank you for the interview; I'll look forward to your feedback.",
+      "Thanks for the interview, I'll await your feedback."
+    ]
+  },
+  {
+    "id": "iv-050",
+    "topic": "interview",
+    "hindi": "Mujhe aapke company mein kaam karne ka mauka mila hai, to main yeh batana chahta hoon ki meri sabse badi strength teamwork hai.",
+    "accepted": [
+      "I would like to share that my biggest strength is teamwork.",
+      "My greatest strength is teamwork, and I think it's very useful here.",
+      "I feel that my strongest quality is teamwork, which could be beneficial for your company."
+    ],
+    "correctPhrase": "I would like to share that my biggest {strength} is {teamwork}.",
+    "pattern": "I would like to share that my biggest {quality} is {noun}.",
+    "variations": [
+      "I would like to share that my biggest talent is teamwork.",
+      "I would like to share that my greatest skill is teamwork."
+    ]
+  }
+]

@@ -1,0 +1,831 @@
+[
+  {
+    "id": "dl-001",
+    "topic": "daily-life",
+    "hindi": "Kal main apni maa ko phir se chai dunga.",
+    "accepted": [
+      "Tomorrow I'll give my mother tea again.",
+      "I'll give my mother tea again tomorrow.",
+      "Tomorrow I will bring tea to my mother again."
+    ],
+    "correctPhrase": "Tomorrow I'll give my mother tea again.",
+    "pattern": "Tomorrow I will {verb} my mother {object} again.",
+    "variations": [
+      "Tomorrow I will bring my mother tea again."
+    ]
+  },
+  {
+    "id": "dl-002",
+    "topic": "daily-life",
+    "hindi": "Maine tumse 5 din pehle bataya tha ki main kal office jaungi.",
+    "accepted": [
+      "I told you five days ago that I would go to the office tomorrow.",
+      "I mentioned five days ago that I would be at the office tomorrow.",
+      "I let you know five days ago that I was going to the office tomorrow."
+    ],
+    "correctPhrase": "I told you {five days ago} that I would {go to the office} tomorrow.",
+    "pattern": "I told you {time} that I would {action} tomorrow.",
+    "variations": [
+      "I told you last week that I would go to the office tomorrow.",
+      "I told you a few days ago that I would be at the office tomorrow."
+    ]
+  },
+  {
+    "id": "dl-003",
+    "topic": "daily-life",
+    "hindi": "Usse thoda sa pani peene ki zaroorat hai.",
+    "accepted": [
+      "She needs to drink a little water.",
+      "She must have a little water.",
+      "She needs some water to drink."
+    ],
+    "correctPhrase": "{She} needs {some water} to {drink}.",
+    "pattern": "{subject} needs to {verb} a little {object}.",
+    "variations": [
+      "He needs to have some water.",
+      "They need a little water to drink."
+    ]
+  },
+  {
+    "id": "dl-004",
+    "topic": "daily-life",
+    "hindi": "Kal raat ko main aapse milne aayi thi.",
+    "accepted": [
+      "I was going to meet you last night.",
+      "I was supposed to meet you last night.",
+      "I came to see you last night."
+    ],
+    "correctPhrase": "{I} was going to {meet you last night}.",
+    "pattern": "{subject} was going to {action} {object} {time}.",
+    "variations": [
+      "I was going to see you last night.",
+      "I was scheduled to meet you last night."
+    ]
+  },
+  {
+    "id": "dl-005",
+    "topic": "daily-life",
+    "hindi": "Kya tum aaj khana khane chahooge?",
+    "accepted": [
+      "Will you want to eat food today?",
+      "Do you want to eat something today?",
+      "Would you like to eat today?",
+      "Do you want to eat today?",
+      "Would you like to eat something today?",
+      "Will you eat today?",
+      "Will you want to eat today?",
+      "Will you want to eat something today?",
+      "Do you want to eat something?",
+      "Do you want to eat?",
+      "Do you want?",
+      "Do you...",
+      "I want to eat"
+    ],
+    "correctPhrase": "Do you...",
+    "pattern": "{subject} {modal} {action} {object} {time}.",
+    "variations": [
+      "Do you want to eat something today?",
+      "Will you eat today?"
+    ]
+  },
+  {
+    "id": "dl-006",
+    "topic": "daily-life",
+    "hindi": "Mere bhai ka shaadi ka kharcha kitna hoga?",
+    "accepted": [
+      "How much will my brother's wedding cost?",
+      "What will be the cost of my brother's wedding?",
+      "Do you know how much my brother's wedding will cost?",
+      "Can you tell me how much my brother's wedding will cost?",
+      "What's the price for my brother's wedding?"
+    ],
+    "correctPhrase": "{What} will {be the cost of} my brother's {wedding}?",
+    "pattern": "{how many} will my brother's {event} cost?",
+    "variations": [
+      "How much will my sister's wedding cost?",
+      "How much will my uncle's wedding cost?"
+    ]
+  },
+  {
+    "id": "dl-007",
+    "topic": "daily-life",
+    "hindi": "Aaj raat ko aap kaun se restaurant mein khana khayenge?",
+    "accepted": [
+      "Where will you be eating dinner tonight?",
+      "What restaurant will you be going to for dinner tonight?",
+      "Where are you going to dine tonight?",
+      "Which place will you eat at tonight?",
+      "Do you know where you'll have dinner tonight?"
+    ],
+    "correctPhrase": "{Which place} will you {eat at tonight}?",
+    "pattern": "{where} will you be {verb} {object} tonight?",
+    "variations": [
+      "Where will you be eating breakfast tomorrow?",
+      "Where will you be dining at tonight?"
+    ]
+  },
+  {
+    "id": "dl-008",
+    "topic": "daily-life",
+    "hindi": "Aap log kaam ke baad kahaan ghoomne ja rahe hain?",
+    "accepted": [
+      "Where are you all going to hang out after work?",
+      "Where will you go hang out after work?",
+      "Where are you all heading out for fun after work?",
+      "Do you all know where you'll go after work?",
+      "Where are you all planning to go after work?"
+    ],
+    "correctPhrase": "{Where} are you all {planning to go} after work?",
+    "pattern": "{where} are you all {verb} {object} after work?",
+    "variations": [
+      "Where are you all going to hang out after school?",
+      "Where are you all going to chill after work?"
+    ]
+  },
+  {
+    "id": "dl-009",
+    "topic": "daily-life",
+    "hindi": "Mujhe aapke ghar ka rent kitne din pehle jama karna hoga?",
+    "accepted": [
+      "When do I need to pay your rent?",
+      "How many days before do I have to pay the rent?",
+      "When must I pay the rent?",
+      "By when should I pay the rent?",
+      "What's the due date for the rent?",
+      "When do I need to pay the rent?"
+    ],
+    "correctPhrase": "{When} do I need to {pay} the rent?",
+    "pattern": "{when} do I need to {verb} the rent?",
+    "variations": [
+      "When do I need to pay the rent next month?",
+      "When do I need to pay the rent by?"
+    ]
+  },
+  {
+    "id": "dl-010",
+    "topic": "daily-life",
+    "hindi": "Maine kal ke liye aapke ghar ka khaana banaya hai",
+    "accepted": [
+      "I made dinner for you for tomorrow",
+      "I made food for your home for tomorrow",
+      "I cooked dinner for you tomorrow"
+    ],
+    "correctPhrase": "{I} made {dinner} for {you} for {tomorrow}",
+    "pattern": "{subject} made {object} for {recipient} for {time}",
+    "variations": [
+      "I cooked lunch for you next week",
+      "I prepared dinner for you tomorrow"
+    ]
+  },
+  {
+    "id": "dl-011",
+    "topic": "daily-life",
+    "hindi": "Aapke ghar ke padosi ne mere kaam ke liye paise maange",
+    "accepted": [
+      "The neighbors asked me for money for my work",
+      "My neighbors asked for money for my work",
+      "My neighbors requested money for my job"
+    ],
+    "correctPhrase": "{The neighbors} asked {me} for {money} for {my work}",
+    "pattern": "{subject} asked {recipient} for {object} for {reason}",
+    "variations": [
+      "The neighbors requested a favor for their child",
+      "The neighbors asked for help with the garden"
+    ]
+  },
+  {
+    "id": "dl-012",
+    "topic": "daily-life",
+    "hindi": "Yeh shirt kitna mehenga hai?",
+    "accepted": [
+      "How much is this shirt?",
+      "What's the price of this shirt?",
+      "What does this shirt cost?"
+    ],
+    "correctPhrase": "How much is this shirt?",
+    "pattern": "{question} {object} {determiner} {noun}?",
+    "variations": [
+      "What does this dress cost?",
+      "How much is that jacket?"
+    ]
+  },
+  {
+    "id": "dl-013",
+    "topic": "daily-life",
+    "hindi": "Main kal shaam ko dosti ke saath film dekhne ja raha hoon",
+    "accepted": [
+      "I'm going to watch a movie with friends tomorrow evening",
+      "Tomorrow evening I'll go watch a movie with my friends",
+      "I'm heading out to see a film with friends tomorrow night"
+    ],
+    "correctPhrase": "{I'm going} to {watch a movie} with {friends tomorrow evening}",
+    "pattern": "{subject} {verb} to {activity} with {group} {time}",
+    "variations": [
+      "I'm going to have dinner with family next weekend",
+      "I'll visit my sister tomorrow morning"
+    ]
+  },
+  {
+    "id": "dl-014",
+    "topic": "daily-life",
+    "hindi": "Maine kal raat ko bahut bura saandha khaya",
+    "accepted": [
+      "I ate a bad meal last night",
+      "I had a bad meal yesterday night",
+      "I ate something awful last night"
+    ],
+    "correctPhrase": "I {had} a {bad} meal {yesterday night}",
+    "pattern": "I {verb} a {adjective} meal last night",
+    "variations": [
+      "I ate an awful meal yesterday night",
+      "I had a terrible meal last night"
+    ]
+  },
+  {
+    "id": "dl-015",
+    "topic": "daily-life",
+    "hindi": "Dost, tum mere saath cinema jaoge?",
+    "accepted": [
+      "Will you go to the cinema with me?",
+      "Are you going to the cinema with me?",
+      "Can you come with me to the cinema?",
+      "Do you want to go to the cinema with me?"
+    ],
+    "correctPhrase": "Will you {go} to the {cinema} with me?",
+    "pattern": "Will you {verb} to the {place} with me?",
+    "variations": [
+      "Are you going to the cinema with me?",
+      "Do you want to go to the cinema with me?"
+    ]
+  },
+  {
+    "id": "dl-016",
+    "topic": "daily-life",
+    "hindi": "Padosi ne kal raat ko ghar se bahut awaaz ki",
+    "accepted": [
+      "The neighbour made a lot of noise from the house last night",
+      "The neighbour was loud last night from his house",
+      "The neighbour made a lot of noise last night from his home"
+    ],
+    "correctPhrase": "The {neighbour} made a lot of noise {last night} from {his home}",
+    "pattern": "The {neighbor} made a lot of noise from the {house} last night",
+    "variations": [
+      "The neighbour made a lot of noise last night from his home",
+      "The neighbour was loud last night from his house"
+    ]
+  },
+  {
+    "id": "dl-017",
+    "topic": "daily-life",
+    "hindi": "Mujhe apne ghar ke liye thoda sa kiraye ka paisa dena hai.",
+    "accepted": [
+      "I have to pay a little rent for my house.",
+      "I need to pay a small amount of rent for my house.",
+      "I have to give a little rent money for my house.",
+      "I need to pay a bit of rent for my house.",
+      "I have to pay a small amount for my rent."
+    ],
+    "correctPhrase": "I have to pay {a small amount} for my {rent}.",
+    "pattern": "{I have to pay {adjective} {noun} for my {noun}.}",
+    "variations": [
+      "I need to pay a small amount of rent for my house.",
+      "I have to give a little rent money for my house."
+    ]
+  },
+  {
+    "id": "dl-018",
+    "topic": "daily-life",
+    "hindi": "Tumhari bhabhi ko kal subah badi badi botaliyan kholni hain.",
+    "accepted": [
+      "Your sister-in-law has to open a lot of bottles tomorrow morning.",
+      "Your sister-in-law needs to open many bottles tomorrow morning.",
+      "She has to open many bottles tomorrow morning.",
+      "Your sister-in-law has a lot of bottles to open tomorrow morning.",
+      "She needs to open a lot of bottles tomorrow morning."
+    ],
+    "correctPhrase": "Your {sister-in-law} has {a lot of bottles} to open {tomorrow morning}.",
+    "pattern": "{Your {noun} has to open {adjective} {noun}s tomorrow morning.}",
+    "variations": [
+      "Your sister-in-law needs to open many bottles tomorrow morning.",
+      "She has to open a lot of bottles tomorrow morning."
+    ]
+  },
+  {
+    "id": "dl-019",
+    "topic": "daily-life",
+    "hindi": "Maine apne bhai ko phone kiya aur pucha ki woh aaj khush hai ya nahi",
+    "accepted": [
+      "I called my brother and asked him if he was happy today",
+      "I called my brother and asked him whether he was happy today",
+      "I called my brother and asked him if he was in a good mood today"
+    ],
+    "correctPhrase": "I called {my brother} and asked him if he was {happy} today",
+    "pattern": "I called {person} and asked him if he was {state} today",
+    "variations": [
+      "I called my sister and asked her if she was happy today"
+    ]
+  },
+  {
+    "id": "dl-020",
+    "topic": "daily-life",
+    "hindi": "Mere parivaar ke sabhi log kachcha khana khate nahi hain",
+    "accepted": [
+      "Not all of my family members eat raw food",
+      "None of my family members eat raw food",
+      "None of my family members eat uncooked food"
+    ],
+    "correctPhrase": "Not all of my family {members} eat {raw} food",
+    "pattern": "Not all of my family {group} eat {type} food",
+    "variations": [
+      "None of my family members eat raw food"
+    ]
+  },
+  {
+    "id": "dl-021",
+    "topic": "daily-life",
+    "hindi": "Pichle hafte mainne apne bhai se rent ke baare mein baat ki, lekin usne jawab nahi diya",
+    "accepted": [
+      "Last week I talked to my brother about the rent, but he didn't reply",
+      "Last week I spoke with my brother about the rent, but he didn't answer"
+    ],
+    "correctPhrase": "Last week I spoke with {my brother} about the {rent}, but he {didn't answer}",
+    "pattern": "Last week I spoke with {person} about the {topic}, but he didn't {response}",
+    "variations": [
+      "Last week I spoke with my brother about the rent, but he didn't answer"
+    ]
+  },
+  {
+    "id": "dl-022",
+    "topic": "daily-life",
+    "hindi": "Mere bhai ka ghar ka rent badh gaya hai",
+    "accepted": [
+      "My brother’s rent has increased",
+      "The rent at my brother’s house has gone up",
+      "My brother’s house rent has risen",
+      "Rent at my brother’s house has increased"
+    ],
+    "correctPhrase": "The rent at my brother’s {house} has {gone up}",
+    "pattern": "The rent at my brother’s {place} has {verb phrase}",
+    "variations": [
+      "The rent at my brother’s house has increased"
+    ]
+  },
+  {
+    "id": "dl-023",
+    "topic": "daily-life",
+    "hindi": "Mere bhai ne mujhse pucha ki main kal aata hoon ya nahi",
+    "accepted": [
+      "Do you think I'll be able to come tomorrow?",
+      "Will I be able to come tomorrow?",
+      "Can I come tomorrow?",
+      "Do you think I can come tomorrow?"
+    ],
+    "correctPhrase": "Can I come tomorrow?",
+    "pattern": "{subject} {verb} {object} {time} ?",
+    "variations": [
+      "Can I come this afternoon?",
+      "Can I come next week?"
+    ]
+  },
+  {
+    "id": "dl-024",
+    "topic": "daily-life",
+    "hindi": "Maine apni dadi ko kal ki shadi ka invitation bheja tha",
+    "accepted": [
+      "I sent my grandmother an invitation for her wedding yesterday",
+      "I sent my grandma an invitation for her wedding yesterday"
+    ],
+    "correctPhrase": "I {sent} my {grandma} an invitation for her {wedding} yesterday",
+    "pattern": "I {verb} my {family member} an invitation for her {event} yesterday",
+    "variations": [
+      "I sent my mother an invitation for her wedding yesterday",
+      "I sent my sister an invitation for her wedding yesterday"
+    ]
+  },
+  {
+    "id": "dl-025",
+    "topic": "daily-life",
+    "hindi": "Maine shop me ek saal purana jacket kharida, lekin woh bilkul fit nahi hua",
+    "accepted": [
+      "I bought a one-year-old jacket at the shop, but it didn't fit at all",
+      "I bought a jacket from the shop that was one year old, but it didn't fit at all",
+      "I bought a jacket that was a year old from the shop, but it didn't fit at all"
+    ],
+    "correctPhrase": "I {bought} a {jacket that was a year old} from the {shop}, but it {didn't fit at all}",
+    "pattern": "I {verb} a {adjective} {noun} from the {place}, but it didn't {verb} at all",
+    "variations": [
+      "I bought a two-year-old jacket from the shop, but it didn't fit at all",
+      "I bought an old jacket from the shop, but it didn't fit at all"
+    ]
+  },
+  {
+    "id": "dl-026",
+    "topic": "daily-life",
+    "hindi": "Aaj ka traffic bohot zyada tha, isliye main der se school pahunch gaya",
+    "accepted": [
+      "The traffic was so bad today that I got to school late",
+      "Traffic was so bad today that I arrived at school late",
+      "Traffic was so bad today that I got to school late"
+    ],
+    "correctPhrase": "The {traffic} was so {bad today} that I {got} to {school late}",
+    "pattern": "The {noun} was so {adjective} {time} that I {verb} to {place} {adverb}",
+    "variations": [
+      "The traffic was so bad today that I arrived at school late",
+      "The traffic was so bad today that I got to school late"
+    ]
+  },
+  {
+    "id": "dl-027",
+    "topic": "daily-life",
+    "hindi": "Maine apni behan ko chai pila di.",
+    "accepted": [
+      "There's a small shop near my house.",
+      "There's a little shop next to my home.",
+      "A small shop is located next to my house."
+    ],
+    "correctPhrase": "There's a small shop near my house.",
+    "pattern": "There's a {size} shop {relation} my {place}",
+    "variations": [
+      "There's a little shop next to my home",
+      "A small shop is located next to my house"
+    ]
+  },
+  {
+    "id": "dl-028",
+    "topic": "daily-life",
+    "hindi": "Mujhe ek extra ticket chahiye",
+    "accepted": [
+      "I need an extra ticket",
+      "Can I have an extra ticket?",
+      "I would like an extra ticket"
+    ],
+    "correctPhrase": "{Can} I {have} an extra {ticket}?",
+    "pattern": "I {verb} an extra {object}",
+    "variations": [
+      "I need an extra ticket"
+    ]
+  },
+  {
+    "id": "dl-029",
+    "topic": "daily-life",
+    "hindi": "Maine apni favourite store mein se ek new sweater kharidi hai.",
+    "accepted": [
+      "I bought a new sweater from my favourite store.",
+      "I purchased a new sweater at my favourite store.",
+      "I got a new sweater from my favourite shop.",
+      "I bought a new sweater from my favourite shop."
+    ],
+    "correctPhrase": "I bought a new {sweater} from my favourite {shop}.",
+    "pattern": "I bought a new {noun} from my favourite {place}.",
+    "variations": [
+      "I purchased a new jacket at my favourite store.",
+      "I got a new dress from my favourite shop."
+    ]
+  },
+  {
+    "id": "dl-030",
+    "topic": "daily-life",
+    "hindi": "Mujhe aaj kaam se ghar kaise lautna hai, batao.",
+    "accepted": [
+      "How do I get home from work today?",
+      "How can I get home from work today?",
+      "What’s the best way to get home from work today?",
+      "How should I get home from work today?"
+    ],
+    "correctPhrase": "How can I {get home} from {work} today?",
+    "pattern": "How can I {verb phrase} from {place} today?",
+    "variations": [
+      "How do I get home from the office today?",
+      "How can I get home from the train station today?"
+    ]
+  },
+  {
+    "id": "dl-031",
+    "topic": "daily-life",
+    "hindi": "Mere padosi ki billi ab tak ghar ke bahar nikal nahin rahi.",
+    "accepted": [
+      "My neighbour's cat still hasn't come out of the house.",
+      "My neighbour's cat hasn't left the house yet.",
+      "My neighbour's cat hasn't come out yet.",
+      "My neighbour's cat hasn't exited the house yet."
+    ],
+    "correctPhrase": "{My neighbour's cat} still {hasn't come out of the house}.",
+    "pattern": "{possessive} {noun} still hasn't {verb} {prepositional phrase}.",
+    "variations": [
+      "My neighbour's dog still hasn't come out of the house.",
+      "My neighbour's parrot still hasn't left the house."
+    ]
+  },
+  {
+    "id": "dl-032",
+    "topic": "daily-life",
+    "hindi": "Maine kal shop se ek kitaab li",
+    "accepted": [
+      "I bought a book from the shop yesterday",
+      "I went to the shop yesterday and bought a book",
+      "Yesterday, I bought a book from the shop",
+      "I grabbed a book from the shop yesterday"
+    ],
+    "correctPhrase": "{I bought} a {book} from the {shop} yesterday",
+    "pattern": "{subject} {verb} a {object} from the {place} yesterday",
+    "variations": [
+      "I bought a newspaper from the shop yesterday"
+    ]
+  },
+  {
+    "id": "dl-033",
+    "topic": "daily-life",
+    "hindi": "Mere bhai ki biwi hamare ghar aayi",
+    "accepted": [
+      "My brother's wife came to our house",
+      "The wife of my brother visited our home",
+      "My brother's wife came over to us",
+      "My brother’s wife visited us at home"
+    ],
+    "correctPhrase": "{My brother's wife came over} to {us}",
+    "pattern": "{subject} {verb} to our {place}",
+    "variations": [
+      "My sister's husband came to our house"
+    ]
+  },
+  {
+    "id": "dl-034",
+    "topic": "daily-life",
+    "hindi": "Kal ke liye tumhari madad chahiye",
+    "accepted": [
+      "I need your help for tomorrow",
+      "I could use your help tomorrow",
+      "I would like your help for tomorrow",
+      "I need your help tomorrow"
+    ],
+    "correctPhrase": "I need your help tomorrow",
+    "pattern": "I {verb} {object} for tomorrow",
+    "variations": [
+      "I need your help for next week"
+    ]
+  },
+  {
+    "id": "dl-035",
+    "topic": "daily-life",
+    "hindi": "Mujhe aaj ka khana khana nahi hai",
+    "accepted": [
+      "I don’t want to eat today’s food",
+      "I have no desire to eat today’s food",
+      "I’m not hungry for today’s meal",
+      "I don’t feel like eating today"
+    ],
+    "correctPhrase": "I {don’t want} to {eat} today’s {food}",
+    "pattern": "I {verb} to {verb} {object} today",
+    "variations": [
+      "I don’t feel like eating today"
+    ]
+  },
+  {
+    "id": "dl-036",
+    "topic": "daily-life",
+    "hindi": "Mere bhai ne naya kapda kharida.",
+    "accepted": [
+      "My brother bought a new shirt.",
+      "My brother bought a new outfit.",
+      "My brother bought a new piece of clothing."
+    ],
+    "correctPhrase": "My {brother} bought a new {shirt}.",
+    "pattern": "My {noun} bought a new {noun}.",
+    "variations": [
+      "My brother bought a new jacket."
+    ]
+  },
+  {
+    "id": "dl-037",
+    "topic": "daily-life",
+    "hindi": "Chandni Raat mein hum cinema jaa rahe hain.",
+    "accepted": [
+      "We are going to the cinema tonight.",
+      "We’re going to the cinema on the clear night.",
+      "We are heading to the movies tonight."
+    ],
+    "correctPhrase": "We are going to the cinema tonight.",
+    "pattern": "We are going to the {noun} {time phrase}.",
+    "variations": [
+      "We’re going to the movies tonight."
+    ]
+  },
+  {
+    "id": "dl-038",
+    "topic": "daily-life",
+    "hindi": "Mujhe maa se kuch paise udhar leni hai.",
+    "accepted": [
+      "I need to borrow some money from my mother.",
+      "Can I borrow a little money from my mom?",
+      "I want to borrow a few rupees from mom.",
+      "Can I borrow a few rupees from mom?"
+    ],
+    "correctPhrase": "Can I {borrow a few rupees} from {mom}?",
+    "pattern": "Can I {borrow|lend} {some|a few} {money|rupees} from {my|your} {mother|mom}",
+    "variations": [
+      "I need to borrow some money from my mom."
+    ]
+  },
+  {
+    "id": "dl-039",
+    "topic": "daily-life",
+    "hindi": "Meri behen naya phone kharidna chahti hai.",
+    "accepted": [
+      "My sister wants to buy a new phone.",
+      "Sister wants to purchase a new phone.",
+      "She wants to buy a new phone."
+    ],
+    "correctPhrase": "My {sister} wants to buy a new {phone}.",
+    "pattern": "My {sister|brother} wants to buy a new {phone|laptop|tablet}",
+    "variations": [
+      "My brother wants to buy a new phone."
+    ]
+  },
+  {
+    "id": "dl-040",
+    "topic": "daily-life",
+    "hindi": "Mujhe apni patni ke liye ek sundar dress kharidna hai.",
+    "accepted": [
+      "I need to buy a nice dress for my wife.",
+      "I want to purchase a lovely dress for my wife.",
+      "I have to get a pretty dress for my wife.",
+      "I need a beautiful dress for my wife.",
+      "I am looking to buy a nice dress for my wife."
+    ],
+    "correctPhrase": "I need to buy a {nice} dress for my {wife}.",
+    "pattern": "I need to buy a {adjective} dress for my {relation}.",
+    "variations": [
+      "I want to purchase a lovely dress for my wife.",
+      "I have to get a pretty dress for my wife."
+    ]
+  },
+  {
+    "id": "dl-041",
+    "topic": "daily-life",
+    "hindi": "Mujhe apne parivar ke liye ek naya sofa chahiye.",
+    "accepted": [
+      "I need a new sofa for my family.",
+      "I need a new couch for my family.",
+      "I am looking for a new sofa for my family.",
+      "I would like a new sofa for my family.",
+      "I am searching for a new sofa for my family."
+    ],
+    "correctPhrase": "I need a {new} sofa for my {family}.",
+    "pattern": "I need a {adjective} sofa for my {group}.",
+    "variations": [
+      "I need a new couch for my family.",
+      "I am looking for a new sofa for my family."
+    ]
+  },
+  {
+    "id": "dl-042",
+    "topic": "daily-life",
+    "hindi": "Mere bhai ke saath hum khana khane ja rahe hain",
+    "accepted": [
+      "We're going out to eat with my brother",
+      "I'm going out to eat with my brother",
+      "We're going out to eat with my brother today",
+      "Going out to eat with my brother"
+    ],
+    "correctPhrase": "{Going out} to {eat} with {my brother}",
+    "pattern": "{Subject} {verb} {adverb} to {verb} with {possessive} {noun}",
+    "variations": [
+      "We're going out to eat with my sister"
+    ]
+  },
+  {
+    "id": "dl-043",
+    "topic": "daily-life",
+    "hindi": "Kal hum apne doston ke saath ghumne ja rahe hain",
+    "accepted": [
+      "We're going out to hang out with my friends tomorrow",
+      "Going out to hang out with my friends tomorrow",
+      "We're going out to hang out with my friends tomorrow morning"
+    ],
+    "correctPhrase": "{Going out} to {hang out} with {my friends tomorrow}",
+    "pattern": "{Subject} {verb} {adverb} to {verb} with {possessive} {noun} {time}",
+    "variations": [
+      "We're going out to hang out with my friends next week"
+    ]
+  },
+  {
+    "id": "dl-044",
+    "topic": "daily-life",
+    "hindi": "Mujhe tumse ek request karni hai",
+    "accepted": [
+      "I have a favor to ask you",
+      "I need to ask you for a favor"
+    ],
+    "correctPhrase": "{I have} a {favor} to {ask you}",
+    "pattern": "{Subject} {verb} a {noun} to {pronoun}",
+    "variations": [
+      "I have a favor to ask you"
+    ]
+  },
+  {
+    "id": "dl-045",
+    "topic": "daily-life",
+    "hindi": "Yeh khana bahut swaadisht lag raha hai",
+    "accepted": [
+      "This food looks delicious",
+      "The food looks very tasty",
+      "The food looks delicious"
+    ],
+    "correctPhrase": "The food looks delicious",
+    "pattern": "{Subject} {verb} {adjective}",
+    "variations": [
+      "The food looks very tasty"
+    ]
+  },
+  {
+    "id": "dl-046",
+    "topic": "daily-life",
+    "hindi": "Mujhe kal shaam tak ghar ka kaam khatam karna hai.",
+    "accepted": [
+      "I have to finish the housework by tomorrow evening.",
+      "I need to get the house chores done by tomorrow night.",
+      "By tomorrow evening I have to wrap up the household tasks.",
+      "I must complete the household work by tomorrow night.",
+      "I need to get the house chores done by tomorrow evening."
+    ],
+    "correctPhrase": "I {have to finish the housework} by {tomorrow evening}.",
+    "pattern": "I {need to | have to | must} {get the house chores done | finish the housework} by {tomorrow evening | tomorrow night}.",
+    "variations": [
+      "I have to finish the housework by tomorrow evening.",
+      "I need to get the house chores done by tomorrow night."
+    ]
+  },
+  {
+    "id": "dl-047",
+    "topic": "daily-life",
+    "hindi": "Mere bhai ne mera mobile kho diya.",
+    "accepted": [
+      "My brother lost my phone.",
+      "My brother misplaced my phone.",
+      "I lost my phone, and my brother is the one who misplaced it.",
+      "My brother has misplaced my phone."
+    ],
+    "correctPhrase": "{I lost} my {phone, and my brother is the one who misplaced it}.",
+    "pattern": "{My brother | My sibling} {lost | misplaced} my {phone | mobile}.",
+    "variations": [
+      "My brother misplaced my phone.",
+      "My sibling lost my mobile."
+    ]
+  },
+  {
+    "id": "dl-048",
+    "topic": "daily-life",
+    "hindi": "Kya aap mujhe apni gaadi bechne mein madad kar sakte hain?",
+    "accepted": [
+      "Can you help me sell your car?",
+      "Could you assist me with selling your vehicle?",
+      "Will you help me sell your car?",
+      "Please help me sell your car."
+    ],
+    "correctPhrase": "Please help me sell your car.",
+    "pattern": "{Can | Could | Will | Please} {you | we} {help me | assist me} {sell your | sell my} {car | vehicle}.",
+    "variations": [
+      "Could you help me sell my car?",
+      "Will you assist me with selling your vehicle?"
+    ]
+  },
+  {
+    "id": "dl-049",
+    "topic": "daily-life",
+    "hindi": "Aaj shaam ko hum cinema jaa rahe hain, aap bhi aayenge?",
+    "accepted": [
+      "Are you coming to the cinema with us tonight?",
+      "Will you join us at the movies this evening?",
+      "Do you want to go to the cinema with us tonight?",
+      "Will you come to the movies this evening?",
+      "Are you coming to the cinema with us this evening?",
+      "Will you be at the cinema tonight?",
+      "Will you join us for the movie this evening?",
+      "Do you want to join us at the cinema?",
+      "Will you come to the movie tonight?",
+      "Will you join the cinema tonight?"
+    ],
+    "correctPhrase": "{Do you want} to {join us at} the {cinema}?",
+    "pattern": "{Are | Will | Do} {you | we} {be | come} to the {cinema | movies} {with us | with us} {tonight | this evening}.",
+    "variations": [
+      "Will you join us at the cinema this evening?",
+      "Are you coming to the movies with us tonight?"
+    ]
+  },
+  {
+    "id": "dl-050",
+    "topic": "daily-life",
+    "hindi": "Meri behen agle hafte aa rahi hai",
+    "accepted": [
+      "My sister is coming next week",
+      "My sister will be visiting next week",
+      "Next week, my sister is coming"
+    ],
+    "correctPhrase": "My sister is coming next week",
+    "pattern": "{Subject} {verb} {adverb} {time}",
+    "variations": [
+      "My brother is visiting next week",
+      "My cousin will be coming next week"
+    ]
+  }
+]

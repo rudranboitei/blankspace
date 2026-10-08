@@ -1,7 +1,10 @@
+import { Suspense } from "react";
+
 import type { Metadata, Viewport } from "next";
 import { Hind, Literata } from "next/font/google";
 
-import { SiteHeader } from "@/components/site-header";
+import { GuestMigration } from "@/components/guest-migration";
+import { SiteHeader, SiteHeaderFallback } from "@/components/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/toaster";
 
@@ -41,7 +44,13 @@ export default function RootLayout({
       <body className="min-h-dvh bg-background text-foreground antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-5">
-            <SiteHeader />
+            {/* The header reads the session, so it streams in. Awaiting it at the top of
+                the layout would hold the whole segment, {children} included, behind the
+                request and leave nothing to prerender. */}
+            <Suspense fallback={<SiteHeaderFallback />}>
+              <SiteHeader />
+            </Suspense>
+            <GuestMigration />
             <main className="flex-1 py-6 pb-10">{children}</main>
           </div>
           <Toaster />

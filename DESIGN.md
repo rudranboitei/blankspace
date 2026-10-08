@@ -79,14 +79,54 @@ Also works
 - Radii by role, not one value for everything: slots 4px (`rounded-sm`), buttons and inputs 6px (`rounded-md`), result block 8px (`rounded-lg`).
 - Textarea: 1px Line border, 2px Ink focus ring. Min touch target 44px on mobile.
 - Mic button is an icon button with an `aria-label`. Use lucide icons at 18px, no icons inside colored circles.
+- Listen button is the same 36px icon button, on the right of the section label row so the phrase keeps the full column width. Volume2 idle, VolumeX while playing, `aria-pressed` on it.
+- Hint sits in the input row beside the mic, ghost variant, small. It reveals a single muted line above the textarea, "Starts with {words}". The words are serif, the label is not.
 - Loading: Skeleton lines inside the result area only. No full-page spinners.
+
+## Result block states
+
+The verdict comes from a local comparison against the bank, so the block branches on a word the
+learner has already written rather than on anything a model decided.
+
+- `correct` is the good case: a "Correct" label in the Correct token, and the phrase relabelled "Another way to say it", because it is an alternative rather than an instruction.
+- `almost` is "Almost", and `not quite` is "Not quite". Both show the word diff.
+- The diff marks the learner's own wrong words in Fix, struck through, and the words the phrase had that they left out in Correct. Only for the two imperfect verdicts: a right answer has nothing to fix.
+- "Pattern" and "Also works" always show, since the pattern behind what they said is the lesson.
+
+Two buttons below the diff spend money, and only two: "Explain" and "My answer is right, check
+it". The second appears only while the answer is not yet accepted, and disappears once the coach
+has ruled on it.
+
+## Spaced review
+
+Review is a Leitner ladder in six boxes. With an account the ladder lives in `saved_patterns`
+and survives a change of device; signed out it lives in `localStorage` for that browser only.
+A pattern starts in box 1 and is due immediately. "Got it" moves it up one box and schedules
+the next visit; "Again" drops it back to box 1 and makes it due right now, so it comes back
+before the session ends.
+
+The wait is read from the box the learner was in when they answered, so the first step is
+actually one day:
+
+| Box left | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| Days until it returns | 1 | 2 | 4 | 8 | 16 | 16 |
+
+Box 6 is the cap, so a pattern never disappears for longer than about two weeks. One card is
+shown at a time, not a list. The order is: Hindi alone, then "Show answer", then the phrase
+with a Listen button, then "Got it" or "Again". Nothing is graded, so there is no score and
+no streak.
+
+Signing in moves whatever was saved as a guest into the account, keeping each pattern's box,
+then empties the browser store. It runs once, and a save it cannot move stays in the browser
+rather than being dropped.
 
 ## Motion
 One moment only: when a result appears, the slot underlines draw left to right, 450ms, staggered 120ms per slot. Nothing else animates on its own. No fade-up entrances, no hover effects on cards. Button press and focus states are fine. Respect `prefers-reduced-motion`.
 
 ## Copy
 - Sentence case. Plain verbs. Say what happens.
-- Buttons: "Check answer", "Save pattern", "Next sentence", "Remove". The same action keeps the same name everywhere ("Save pattern" produces a toast "Pattern saved").
+- Buttons: "Check answer", "Save pattern", "Next sentence", "Remove", "Hint", "Show answer", "Got it", "Again", "Explain", "My answer is right, check it". The same action keeps the same name everywhere ("Save pattern" produces a toast "Pattern saved").
 - Errors say what went wrong and what to do: "Couldn't check your answer. Check your connection and try again."
 - Empty library: "No saved patterns yet. Save one after you check an answer."
 - No emoji, no exclamation marks, no "Oops", no "Let's go", no "Welcome back".
@@ -99,9 +139,22 @@ One moment only: when a result appears, the slot underlines draw left to right, 
 - Decorative icons, illustrations or emoji
 
 ## Data contract with the API
-The route handler returns JSON where `correctPhrase` and `pattern` mark swappable parts with `{braces}`:
-`{ correctPhrase, pattern, variations: string[2], note }`
-Render both through `<PatternText />`. `note` is one plain sentence in Hind, no formatting.
+
+Sentences and verdicts come from `src/data/bank/<topic>.json`, not from a route. Each item is
+`{ id, topic, hindi, accepted[], correctPhrase, pattern, variations[] }`, where `accepted` is the
+set of wordings that count as fully right and `correctPhrase` is one of them, written with its
+swappable parts in `{braces}`.
+
+A learner's answer is normalised, then compared against `accepted` plus the phrase itself:
+exact is "Correct", 85% or more is "Almost", below that is "Not quite".
+
+`POST /api/explain` is the only route, reached for by the Explain and check-my-answer buttons.
+`mode: "explain"` returns `{ correctPhrase, pattern, variations, note }` and deliberately no
+verdict, because the bank already decided that on the device. `mode: "verify"` returns
+`{ verdict, note }` and is the only way a verdict ever comes back from a model.
+
+Render `correctPhrase` and `pattern` through `<PatternText />`. `note` is one plain sentence in
+Hinglish, no formatting, and the line is omitted entirely when the model leaves it out.
 
 ## Quality floor
 Mobile first. Visible keyboard focus. Text contrast at least 4.5:1. Dark mode supported through the `.dark` class.
