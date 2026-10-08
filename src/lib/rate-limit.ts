@@ -15,6 +15,9 @@ import type { SupabaseClient } from "@supabase/supabase-js";
  * accidental loop or a bored person from spending the budget, not a security boundary. The
  * thing that actually bounds cost is the `explanations` cache, which is keyed by sentence and
  * answer and shared by everyone, and the daily cap for anyone reusing real addresses.
+ *
+ * Neither applies to an account in `coach_exemptions`, which the database checks before any
+ * of this. Adding yourself to it is one INSERT, and there is no env var to set or redeploy.
  */
 const LIMITS = {
   account: { perMinute: 10, perDay: 100 },
@@ -120,6 +123,9 @@ export async function consumeCoachQuota(options: {
 
   const { data, error } = await admin.rpc("consume_coach_quota", {
     p_subject: subject,
+    // Null for a guest. The function checks the exemption list itself, so an exempt account
+    // costs no extra query and writes no counters.
+    p_user_id: userId,
     p_minute_bucket: window.minuteBucket,
     p_minute_limit: limits.perMinute,
     p_minute_expires_at: window.minuteExpiresAt.toISOString(),

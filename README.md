@@ -90,6 +90,36 @@ real fix, at the cost of the thing Step 5 added.
 
 A refusal says `out_of_allowance` and carries `Retry-After`. Groq's own throttling is also a
 429, and is reported as `rate_limited`, so the two are never confused.
+
+#### Turning the quota off for someone
+
+An account in `coach_exemptions` is never charged and never refused, and no counters are
+written for it at all. The check happens inside `consume_coach_quota`, so it costs no extra
+query and an exempt account cannot be left stranded mid-window, because it never had one.
+Everyone else is unaffected.
+
+It is a table rather than an env var so it can be changed from the dashboard without a deploy,
+and so "who currently has unlimited spend" has an answer. It has no RLS policies, so the
+browser cannot read it and only the service role can write it — which no route does. Managing
+it is a deliberate act in the SQL editor:
+
+```sql
+-- give someone the lot
+insert into public.coach_exemptions (user_id, reason)
+select id, 'why' from auth.users where email = 'someone@example.com';
+
+-- and take it back; the ceiling returns on the next call
+delete from public.coach_exemptions where user_id =
+  (select id from auth.users where email = 'someone@example.com');
+
+-- who has it
+select u.email, e.reason, e.granted_at from public.coach_exemptions e
+  join auth.users u on u.id = e.user_id;
+```
+
+The owner of this project is on the list. An exemption is unbounded, so a client stuck in a
+retry loop will spend freely; the cache still absorbs repeats of the same question, but a
+fresh one is not.
 - The mic button is optional input through the Web Speech API. Browsers without it keep typing.
   The Listen button reads a phrase out loud with `speechSynthesis`, also free, so the loop is
   speak it, hear it, say it. Opening the mic stops anything still talking, otherwise the
